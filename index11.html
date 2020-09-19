@@ -1,0 +1,294 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>百度文库 - 让每个人平等地提升自我</title><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link href="static/ndpcwenku/static/ndcore/css/index.c65975b0b06776fdae24.css" rel="stylesheet"></head><body><style>
+html {
+    color: #000;
+    background: #fff;
+}
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+fieldset,
+img {
+    border: 0;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var,
+b {
+    font-style: normal;
+    font-weight: normal;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+caption,
+th {
+    text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size:100%;
+    font-weight:normal;
+}
+
+
+pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+abbr,
+acronym {
+    border:0;
+    font-variant:normal;
+}
+
+/*
+ * 1. Addresses CSS quotes not supported in IE6/7
+ * 2. Addresses quote property not supported in S4
+ */
+
+/* 1 */
+
+q {
+    quotes: none;
+}
+
+/* 2 */
+
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+/*
+ * Prevents sub and sup affecting line-height in all browsers
+ * gist.github.com/413930
+ */
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+/*
+ * links
+ */
+
+/*
+ * Addresses outline displayed oddly in Chrome
+ */
+
+a:focus {
+    outline: thin dotted;
+}
+
+/*
+ * Improves readability when focused and also mouse hovered in all browsers
+ * people.opera.com/patrickl/experiments/keyboard/test
+ */
+
+a:hover,
+a:active {
+    outline: 0;
+}
+
+/*
+ * form
+ */
+
+/*
+ * 1. Corrects color not being inherited in IE6/7/8/9
+ * 2. Corrects text not wrapping in FF3 
+ */
+
+legend {
+    border: 0; /* 1 */
+    white-space: normal; /* 2 */
+    color:#000;
+}
+
+button,
+input,
+select,
+textarea {
+    font-family:inherit;
+    font-size:inherit;
+    font-weight:inherit;
+    vertical-align: baseline;
+    *vertical-align: middle;
+}
+
+/*
+ * Addresses FF3/4 setting line-height on 'input' using !important in the UA stylesheet
+ */
+
+button,
+input {
+    line-height: normal; /* 1 */
+}
+
+/*
+ * 1. Improves usability and consistency of cursor style between image-type 'input' and others
+ * 2. Corrects inability to style clickable 'input' types in iOS
+ * 3. Removes inner spacing in IE7 without affecting normal text inputs
+ *    Known issue: inner spacing remains in IE6
+ */
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    cursor: pointer; /* 1 */
+    -webkit-appearance: button; /* 2 */
+    *overflow: visible;  /* 3 */
+}
+
+/*
+ * 1. Addresses box sizing set to content-box in IE8/9
+ * 2. Removes excess padding in IE8/9
+ * 3. Removes excess padding in IE7
+      Known issue: excess padding remains in IE6
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+    *height: 13px; /* 3 */
+    *width: 13px; /* 3 */
+}
+
+
+/*
+ * Removes inner padding and border in FF3+
+ * www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/*
+ * FF3的一些版本hidden没有隐藏
+ */
+input[type="hidden"] {
+    display: none!important;
+}
+
+/*
+ * 1. Removes default vertical scrollbar in IE6/7/8/9
+ * 2. Improves readability and alignment in all browsers
+ * 3. 不让textarea可以resize
+ */
+
+textarea {
+    overflow: auto; /* 1 */
+    vertical-align: top; /* 2 */
+    resize: none; /* 3 */
+}
+
+/*
+ * font
+ */
+
+/* 
+ * 1.333为默认行高16px(16/12),去除sans-serif防止ie8\9下字体变形
+ */
+body {
+    height:100%;
+    font: 12px/1.333 "\5FAE\8F6F\96C5\9ED1", "Hiragino Sans GB", arial,helvetica,clean;
+}
+
+select,
+input,
+button,
+textarea {
+    font:100% arial,helvetica,clean;
+}
+
+table {
+    font-size: inherit;
+    font: 100%;
+}
+
+/*
+ * Corrects font family set oddly in IE6, S4/5, Chrome
+ * en.wikipedia.org/wiki/User:Davidgothberg/Test59
+ */
+
+pre,
+code,
+kbd,
+samp {
+    font-family: monospace, serif;
+    _font-family: 'courier new', monospace;
+    font-size: 100%;
+    line-height: 100%;
+}
+
+small {
+    font-size: 75%;
+}
+</style>
+<div id="app"></div><script>window.pageData = {"passUserInfo":{"isLogin":false},"mixVipAndUserInfo":{},"vipInfo":{},"operationData":{"list":[{"imgSrc":"https://edu-wenku.bdimg.com/v1/images/f%E9%A6%96%E9%A1%B5%E5%85%A5%E5%8F%A3-%E8%B5%84%E6%BA%90%E5%BA%93-1587640581191.png","url":"https://wenku.baidu.com/ndbgc/subject/recruit"},{"imgSrc":"https://edu-tob.bdimg.com/v1/pc/%E6%96%87%E5%BA%93%E6%96%B0%E9%A6%96%E9%A1%B5-%E5%A4%B4%E5%9B%BE%E4%B8%8B%E6%96%B9%E8%BF%90%E8%90%A5%E4%BD%8D-1596531409116.png","url":"https://wenku.baidu.com/ndtopic/cpacardpolymer"},{"imgSrc":"https://edu-tob.bdimg.com/v1/pc/%E9%A6%96%E9%A1%B5%E5%85%A5%E5%8F%A3-1600441715708.jpg","url":"https://wenku.baidu.com/ndbusiness/browse/youthcashier"},{"imgSrc":"https://edu-wenku.bdimg.com/v1/na/0807/%E5%9E%82%E7%B1%BB%E8%BF%90%E8%90%A5/%E6%96%87%E5%BA%93%E6%96%B0%E9%A6%96%E9%A1%B5-%E5%A4%B4%E5%9B%BE%E4%B8%8B%E6%96%B9%E8%BF%90%E8%90%A5%E4%BD%8D-1588938904370.jpg","url":"https://edu-xtopic.bdimg.com/v1/topic/output879.html"}]},"classList":{"docs":[{"className":"学前教育","url":"https://wenku.baidu.com/ndcore/browse/sub?isBus=1&isPus=-1&isChild=&isType=0"},{"className":"基础教育","url":"https://wenku.baidu.com/ndcore/browse/sub?isBus=1&isPus=-1&isChild=&isType=1"},{"className":"高校与高等教育","url":"https://wenku.baidu.com/ndcore/browse/sub?isBus=1&isPus=-1&isChild=&isType=2"},{"className":"语言/资格考试","url":"https://wenku.baidu.com/ndcore/browse/sub?isBus=1&isPus=-1&isChild=&isType=3"},{"className":"实用模板","url":"https://wenku.baidu.com/ndcore/browse/sub?isBus=1&isPus=-1&isChild=&isType=10"},{"className":"法律","url":"https://wenku.baidu.com/ndcore/browse/sub?isBus=1&isPus=-1&isChild=&isType=4"},{"className":"建筑","url":"https://wenku.baidu.com/ndcore/browse/sub?isBus=1&isPus=-1&isChild=&isType=5"},{"className":"互联网","url":"https://wenku.baidu.com/ndcore/browse/sub?isBus=1&isPus=-1&isChild=&isType=6"},{"className":"行业资料","url":"https://wenku.baidu.com/ndcore/browse/sub?isBus=1&isPus=-1&isChild=&isType=7"},{"className":"政务民生","url":"https://wenku.baidu.com/ndcore/browse/sub?isBus=1&isPus=-1&isChild=&isType=8"},{"className":"说明书","url":"https://wenku.baidu.com/ndcore/browse/sub?isBus=1&isPus=-1&isChild=&isType=9"},{"className":"生活娱乐","url":"https://wenku.baidu.com/ndcore/browse/sub?isBus=1&isPus=-1&isChild=&isType=11"}],"books":[{"className":"经济管理","url":"https://yuedu.baidu.com/book/list/1?show=0"},{"className":"成功励志","url":"https://yuedu.baidu.com/book/list/2?show=0"},{"className":"历史传记","url":"https://yuedu.baidu.com/book/list/15?show=0"},{"className":"计算机","url":"https://yuedu.baidu.com/book/list/3?show=0"},{"className":"生活","url":"https://yuedu.baidu.com/book/list/5?show=0"},{"className":"亲子少儿","url":"https://yuedu.baidu.com/book/list/10?show=0"},{"className":"文学艺术","url":"https://yuedu.baidu.com/book/list/7?show=0"},{"className":"社会科学","url":"https://yuedu.baidu.com/book/list/4?show=0"},{"className":"科技","url":"https://yuedu.baidu.com/book/list/9?show=0"},{"className":"小说","url":"https://yuedu.baidu.com/book/list/6?show=0"},{"className":"原创男频","url":"https://yuedu.baidu.com/book/list/11?show=0"},{"className":"原创女频","url":"https://yuedu.baidu.com/book/list/12?show=0"}],"brands":[{"className":"干洗加盟","url":"https://wenku.baidu.com/ndbgc/channel/laundry?ch=laundry"},{"className":"艺术留学","url":"https://wenku.baidu.com/ndbgc/channel/sifenke?ch=sifenke"},{"className":"少儿乐器陪练","url":"https://wenku.baidu.com/ndbgc/channel/kuaipeilian?ch=kuaipeilian"},{"className":"少儿英语","url":"https://wenku.baidu.com/ndbgc/channel/seenglish?ch=seenglish"},{"className":"法考","url":"https://wenku.baidu.com/ndbgc/channel/legalexam?ch=legalexam"},{"className":"微盟小程序","url":"https://wenku.baidu.com/activity/browse/weimeng?ch=weimeng"},{"className":"教师资格证","url":"https://wenku.baidu.com/ndbgc/channel/teacherqc?ch=teacherqc"},{"className":"注册会计师","url":"https://wenku.baidu.com/ndbgc/channel/zcaccountant"},{"className":"初级会计","url":"https://wenku.baidu.com/ndbgc/channel/cjaccountant"},{"className":"瓷砖选材","url":"https://wenku.baidu.com/activity/browse/channelsubject?ch=1810monalisa"},{"className":"企业应用软件","url":"https://wenku.baidu.com/activity/browse/channelsubject?ch=1810meeting"},{"className":"PDF转换","url":"https://wenku.baidu.com/activity/browse/hudun?ch=hudunsubject"},{"className":"考研资料","url":"https://wenku.baidu.com/ndbgc/channel/wendukaoyan"},{"className":"监理工程师","url":"https://wenku.baidu.com/ndbgc/channel/supervisor?ch=supervisor"},{"className":"环保家装","url":"https://wenku.baidu.com/activity/browse/fitmentsubject?ch=yezhifengfitment"},{"className":"CG设计","url":"https://wenku.baidu.com/ndbgc/channel/cgdesign?ch=cgdesign"},{"className":"自考学历","url":"https://wenku.baidu.com/ndbgc/channel/zikao?ch=zikao"},{"className":"在职考研","url":"https://wenku.baidu.com/ndbgc/channel/postgraduate"},{"className":"行业报告","url":"https://wenku.baidu.com/ndbgc/channel/guotong?ch=guotong"},{"className":"美国留学","url":"https://wenku.baidu.com/activity/browse/studysubject?ch=neworiamerica"},{"className":"思维导图","url":"https://wenku.baidu.com/ndbgc/channel/aimonaotu?ch=aimonaotu"},{"className":"雅思","url":"https://wenku.baidu.com/activity/browse/yasisubject?ch=yasisubject"},{"className":"项目管理师","url":"https://wenku.baidu.com/activity/browse/ghbuildsubject?ch=ghbuild"},{"className":"人事管理软件","url":"https://wenku.baidu.com/ndbgc/channel/secondhr?ch=secondhr"},{"className":"MBA","url":"https://wenku.baidu.com/ndbgc/channel/mba?ch=mba"},{"className":"执业医师","url":"https://wenku.baidu.com/ndbgc/channel/pharmacist?ch=pharmacist"},{"className":"托福","url":"https://wenku.baidu.com/activity/browse/tuofusubject?ch=tuofusubject"},{"className":"二级建造师","url":"https://wenku.baidu.com/ndbgc/channel/constructor?ch=constructor"},{"className":"视频剪辑","url":"https://wenku.baidu.com/ndbgc/channel/videoclip?ch=videoclip"}],"vips":[{"className":"VIP福利社","url":"https://wenku.baidu.com/ndwelfare/membercenter/welfarecenter"},{"className":"VIP免费专区","url":"https://wenku.baidu.com/user/browse/newvipfreedoczone"},{"className":"VIP领券中心","url":"https://wenku.baidu.com/ndwelfare/browse/vouchercenter"},{"className":"VIP权益","url":"https://wenku.baidu.com/ndvipmember/browse/vipprivilege"}]},"searchData":{"opHotWord":[{"query":"高考作文","url":"https://wenku.baidu.com/topic/composition2020?year=2020&channel=wkreci","bgColor":"#22AB82","activeBgColor":"#1C9F78"},{"query":"健身教练培训","url":"https://wenku.baidu.com/ndbgc/channel/fitnesscoach?ch=fitnesscoach","bgColor":"#22AB82","activeBgColor":"#1C9F78"}],"normalHotWords":[{"query":"协议书"},{"query":"贷款合同"},{"query":"日历表"},{"query":"简历模板"},{"query":"入党申请书"},{"query":"建筑"},{"query":"考研"},{"query":"新冠肺炎"},{"query":"课件"}],"bgImgs":[{"startTime":"2020-09-04T00:00","endTime":"2020-09-21T23:59","imgSrc":"https://edu-tob.bdimg.com/v1/pc/%E6%96%B0%E9%A6%96%E9%A1%B5%E5%A4%B4%E5%9B%BE5120-640-1600094960386.png","linkUrl":"https://wenku.baidu.com/ndbusiness/browse/youthcashier"},{"startTime":"2020-09-15T23:00","endTime":"2020-09-23T23:59","imgSrc":"https://edu-tob.bdimg.com/v1/pc/55acb925e6a470b779508781013b3333-1600224755668.JPG","linkUrl":"https://wenku.baidu.com/audio/feab581b6bd97f192279e9a7"},{"startTime":"2020-09-11T00:00","endTime":"2020-09-21T23:59","imgSrc":"https://edu-tob.bdimg.com/v1/pc/5120640%E6%B1%80%E6%B1%80%E5%AE%B6%E8%8B%B1%E8%AF%AD-1600268011081.png","linkUrl":"https://wenku.baidu.com/video/courseview/ac58081c59eef8c75fbfb33e"},{"startTime":"2020-09-14T00:00","endTime":"2020-09-21T23:59","imgSrc":"https://edu-tob.bdimg.com/v1/pc/5120-640-02-1600245051427.png","linkUrl":"https://wenku.baidu.com/ndcashier/browse/jiaoyuvipcashier?cashier_code=ChangeFromPCnewtoutu&choose_goods_id=9"}]},"userCardData":{"confNotLogin":{"tipText":"会员享精品图书、格式转换特权","btnText":"14.9元立即开通VIP","cashierCode":"new_shouye_vipcard_unlogin_kt"},"confNotVip":{"tipText":"会员享精品图书、格式转换特权","btnText":"14.9元立即开通VIP","cashierCode":"new_shouye_vipcard_xinke_kt"},"confVipExpired":{"tipText":"会员享精品图书、格式转换特权","btnText":"立即续费","cashierCode":"new_shouye_vipcard_laoke_kt"},"confVip":{"tipText":"会员享精品图书、格式转换特权","btnText":"立即续费","cashierCode":"new_shouye_vipcard_vip_xf_morethan15"},"confVipAlmostExpired":{"tipText":"您的VIP即将到期，续费立享优惠","btnText":"立即续费","cashierCode":"new_shouye_vipcard_vip_xf_lessthan15"},"tools":[{"toolName":"限量好券","url":"https://wenku.baidu.com/ndwelfare/browse/vouchercenter","imgSrc":"https://edu-wenku.bdimg.com/v1/na/0807/%E4%BC%98%E6%83%A0%E5%88%B8-1588823694533.png"},{"toolName":"格式转化","url":"https://wenku.baidu.com/ndvipmember/browse/huixueconvert","imgSrc":"https://edu-wenku.bdimg.com/v1/na/0807/%E6%A0%BC%E5%BC%8F%E8%BD%AC%E6%8D%A2-1585665603540.svg"},{"toolName":"福利社","url":"https://wenku.baidu.com/ndwelfare/membercenter/welfarecenter","imgSrc":"https://edu-wenku.bdimg.com/v1/na/0807/%E7%A4%BC%E5%8C%85%E5%A4%87%E4%BB%BD%402x-1592812400637.png"},{"toolName":"PPT定制","url":"https://wenku.baidu.com/ndgoods/browse/customizedppt","imgSrc":"https://edu-wenku.bdimg.com/v1/na/0807/ppt%E5%AE%9A%E5%88%B6-1585665680399.svg"},{"toolName":"合同拟定","url":"https://wenku.baidu.com/ndgoods/browse/customized","imgSrc":"https://edu-wenku.bdimg.com/v1/na/0807/%E5%90%88%E5%90%8C-1585665741975.svg"},{"toolName":"组卷","url":"https://wenku.baidu.com/ndvertical/zujuan/index?pn=1&chapter_id=0422192e453610661ed9f405","imgSrc":"https://edu-wenku.bdimg.com/v1/na/0807/%E7%BB%84%E5%8D%B7-1585665781559.svg"}]},"vouchers":{},"promotionData":{"list":[{"id":"57230722192e45361066f501","title":"一听就上瘾！小学生必背古诗词，边唱边学无压力！","type":4,"original_price":"29.00","price":"29.00","img_url":"https://edu-tob.bdimg.com/v1/pc/%E8%AF%BE%E7%A8%8B%E4%B8%80%EF%BC%9A%E9%99%90%E6%97%B6%E4%BF%83%E9%94%80800x450-1600156765631.jpg","jump_url":"https://wenku.baidu.com/audio/feab581b6bd97f192279e9a7","startTime":"2020-09-16T00:00","endTime":"2020-09-23T23:59","typeName":"course"},{"id":"90df5022aaea998fcc220e06","title":"普通人可执行的赚钱思路课！","type":4,"original_price":"199.00","price":"199.00","img_url":"https://edu-tob.bdimg.com/v1/pc/9079cabe2cb0fc929600b6c63e5287dc-1599617516769.PNG","jump_url":"https://wenku.baidu.com/video/courseview/408b24fff705cc175527095f","startTime":"","endTime":"","typeName":"course"},{"id":"d9fcf705cc17552707220806","title":"500强企业特聘讲师亲授：108套销售心法！","type":4,"original_price":"108.00","price":"108.00","img_url":"https://edu-tob.bdimg.com/v1/pc/WPS%E5%9B%BE%E7%89%87-%E4%BF%AE%E6%94%B9%E5%B0%BA%E5%AF%B8-1600407350256.png","jump_url":"https://wenku.baidu.com/video/courseview/28fdc9d376eeaeaad1f33005","startTime":"2020-09-01T12:12","endTime":"","typeName":"course"},{"id":"1d2a453610661ed9ad51f301","title":"实战派人脉术，快速找到你想找的那个人！","type":4,"original_price":"99.00","price":"99.00","img_url":"https://edu-tob.bdimg.com/v1/pc/e74b5e7c53e29b240e3af7cac3de20f7-1598843280399.PNG","jump_url":"https://wenku.baidu.com/video/courseview/242912a6f524ccbff1218434","startTime":"","endTime":"","typeName":"course"},{"id":"3121bcd126fff705cc170a06","title":"高中数学暑期特训班：必修1至必修5考点合辑","type":4,"original_price":"998.00","price":"498.00","img_url":"https://edu-tob.bdimg.com/v1/pc/xianshicuxiao-1594982102257.PNG","jump_url":"https://wenku.baidu.com/video/courseview/c314e65c3b3567ec102d8a5b","startTime":"","endTime":"","typeName":"course"},{"id":"8419ff00bed5b9f3f90f1c06","title":"英语语法入门：写好简单句子","type":4,"original_price":"99.00","price":"9.90","img_url":"https://edu-wenku.bdimg.com/v1/na/0807/%E5%9E%82%E7%B1%BB%E8%BF%90%E8%90%A5/d808b646c8a30afb3554ef306f0ac96c-1593397923770.PNG","jump_url":"https://wenku.baidu.com/video/courseview/613a900ef12d2af90242e6c1","startTime":"","endTime":"","typeName":"course"},{"id":"1303bed5b9f3f90f76c61b06","title":"引爆执行力","type":2,"original_price":"25.99","price":"17.98","img_url":"https://edu-wenku.bdimg.com/v1/na/0807/99%E7%9F%A5%E8%AF%86%E8%8A%82%E5%88%86%E4%BA%AB%E8%90%BD%E5%9C%B0%E9%A1%B5/d0c8a786c9177f3ec24ac1577fcf3bc79f3d5669-1590669309420.jpg","jump_url":"https://yuedu.baidu.com/ebook/f1b8d6edec630b1c59eef8c75fbfc77da3699745?fr=sy","startTime":"","endTime":"","typeName":"book"},{"id":"160c76c66137ee06eff91806","title":"创新创业战略工具-商业模式画布","type":4,"original_price":"599","price":"199","img_url":"https://edu-wenku.bdimg.com/v1/na/0807/99%E7%9F%A5%E8%AF%86%E8%8A%82%E5%88%86%E4%BA%AB%E8%90%BD%E5%9C%B0%E9%A1%B5/55992-66009-d8102dc62984a354e6c1ce397ca15202-1585900788918.png","jump_url":"https://wenku.baidu.com/video/courseview/4985b8f67c1cfad6195fa768","startTime":"","endTime":"","typeName":"course"},{"id":"611da76e58fafab069dc0206","title":"陈鸣：学会高效表达，带你决胜未来","type":4,"original_price":"199","price":"69","img_url":"https://edu-wenku.bdimg.com/v1/na/0807/99%E7%9F%A5%E8%AF%86%E8%8A%82%E5%88%86%E4%BA%AB%E8%90%BD%E5%9C%B0%E9%A1%B5/57889-43968-fc5e1d2a39beb4a6200a53764faa23c7-1585900789915.jpg","jump_url":"https://wenku.baidu.com/video/courseview/c251647d27284b73f242507d","startTime":"","endTime":"","typeName":"course"},{"id":"295ac8d376eeaeaad1f330a2","title":"redis基础&实战教程","type":4,"original_price":"30","price":"20","img_url":"https://wk-video-img.cdn.bcebos.com/66634-55914-c5d415f9b7f6343778d003e6718d478b.png","jump_url":"https://wenku.baidu.com/video/courseinfo/295ac8d376eeaeaad1f330a2?fr=pcsy","typeName":"course"},{"id":"a990804d2b160b4e767fcfca","title":"安全监督与管理 大学自学复习课程 零基础 从入门到精通","type":4,"original_price":"19.9","price":"9.9","img_url":"https://wk-video-img.cdn.bcebos.com/24287-70968-09048435a95fa9e73c704c31b3f3f0cd.jpeg","jump_url":"https://wenku.baidu.com/video/courseinfo/a990804d2b160b4e767fcfca?fr=pcsy","typeName":"course"},{"id":"409e10661ed9ad51f01df2ad","title":"经典朗诵——《祖国礼赞》（4.字幕配乐朗诵高清视频）","type":4,"original_price":"49","price":"38","img_url":"https://wk-video-img.cdn.bcebos.com/67887-46821-78796f8ee1f2fa40d0822d85a17d4169.jpeg","jump_url":"https://wenku.baidu.com/video/courseinfo/409e10661ed9ad51f01df2ad?fr=pcsy","typeName":"course"}]},"myShopInfo":null,"controlFeature":{"pcGrayTheme":false}};</script><!-- built files will be auto injected --><script src="static/ndpcwenku/static/ndcore/js/dll/vendor.351094f3b65d8e2cf39b.dll.js"></script><script src="static/ndpcwenku/static/ndcore/js/dll/orion.351094f3b65d8e2cf39b.dll.js"></script><script src="static/ndpcwenku/static/ndcore/js/common/common.c65975b0b06776fdae24.js"></script><script src="static/ndpcwenku/static/ndcore/js/common/vendors~account~index~packagedoc.js"></script><script src="static/ndpcwenku/static/ndcore/js/views/index.c65975b0b06776fdae24.js"></script></body></html>

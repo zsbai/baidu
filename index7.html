@@ -1,0 +1,1537 @@
+<!DOCTYPE html>
+<!--STATUS OK-->
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<meta property="wb:webmaster" content="3aababe5ed22e23c">
+<meta name="referrer" content="always">
+<title>百度知道 - 全球最大中文互动问答平台</title>
+
+
+
+<script>
+    window.alogObjectConfig = {
+        product: '102',
+        page: '102_4', 
+        monkey_page: 'zhidao-home',
+        speed_page: '4',
+        speed: {
+            sample: '1'
+        },
+        monkey: {
+            sample: '0.5'
+        },
+        exception: { 
+            sample: '0.5'
+        },
+        feature: {
+            sample: '0.5'
+        },
+        cus: {
+            sample: '0.5',
+            custom_metrics: ['c_sbox', 'c_menu', 'c_top']
+        },
+        csp: {
+            sample: '1',
+            'default-src': [
+                {match: '*bae.baidu.com', target: 'Accept,Warn'},
+                {match: '*.baidu.com,*.bdstatic.com,*.bdimg.com,localhost,*.hao123.com,*.hao123img.com', target: 'Accept'},
+                {match: /^(127|172|192|10)(\.\d+){3}$/, target: 'Accept'},
+                {match: '*', target: 'Accept,Warn'}
+            ]
+        }
+    };
+ 
+    void function(a,b,c,d,e,f,g){a.alogObjectName=e,a[e]=a[e]||function(){(a[e].q=a[e].q||[]).push(arguments)},a[e].l=a[e].l||+new Date,d="https:"===a.location.protocol?"https://fex.bdstatic.com"+d:"http://fex.bdstatic.com"+d;var h=!0;if(a.alogObjectConfig&&a.alogObjectConfig.sample){var i=Math.random();a.alogObjectConfig.rand=i,i>a.alogObjectConfig.sample&&(h=!1)}h&&(f=b.createElement(c),f.async=!0,f.src=d+"?v="+~(new Date/864e5)+~(new Date/864e5),g=b.getElementsByTagName(c)[0],g.parentNode.insertBefore(f,g))}(window,document,"script","/hunter/alog/alog.min.js","alog"),void function(){function a(){}window.PDC={mark:function(a,b){alog("speed.set",a,b||+new Date),alog.fire&&alog.fire("mark")},init:function(a){alog("speed.set","options",a)},view_start:a,tti:a,page_ready:a}}();
+    void function(n){var o=!1;n.onerror=function(n,e,t,c){var i=!0;return!e&&/^script error/i.test(n)&&(o?i=!1:o=!0),i&&alog("exception.send","exception",{msg:n,js:e,ln:t,col:c}),!1},alog("exception.on","catch",function(n){alog("exception.send","exception",{msg:n.msg,js:n.path,ln:n.ln,method:n.method,flag:"catch"})})}(window);
+</script>
+
+<script>
+	!function(document, window){
+		var log = {
+			list: [],
+			host: 'https://' + location.host + '/api/httpscheck',
+			log: function(param) {
+				var a = [];
+		    	for(var k in param) {
+		    		a.push(k + '=' + param[k]);
+		    	}
+		    	var msg = a.join('&');
+		    	if(~this.list.indexOf(msg)){
+		    		return;
+		    	}
+		    	this.list.push(msg);
+		  		var img = new Image();
+		    	var key = '_ik_log_' + (Math.random()*2147483648 ^ 0).toString(36);
+		    	window[key] = img;
+		    		img.onload = img.onerror = img.onabort = function() {
+		        		img.onload = img.onerror = img.onabort = null;
+		        		window[key] = null;
+			    		img = null;
+		    	};
+		  		img.src = this.host + '?' + msg;
+			}
+		};
+
+		function HTTPSWarningLog(){
+			this.selector = [
+				'link',
+				'script',
+				'img',
+				'embed',
+				'iframe'
+			];
+			this.warningCounter = 0;
+			this.init();
+		};
+
+		HTTPSWarningLog.prototype = {
+			init: function(){
+				this.fetch();
+			},
+
+			fetch: function(){
+				for(var tags = this.selector, i =0, len = tags.length; i < len;i++) {
+					this.getTag(tags[i]);
+				}
+			},
+
+			getTag: function(tag) {
+				var domList = document.getElementsByTagName(tag);
+				if(!domList.length) {
+					return;
+				}
+				for(var i = 0,len = domList.length;i<len;i++) {
+					var el = domList[i];
+					var url = el.getAttribute(el.tagName==='LINK' ? 'href' : 'src');
+                    if(el.getAttribute('rel') === 'canonical') {
+                        continue;
+                    }
+					if(url && 'https:' === location.protocol && !url.indexOf('http:')){
+						this.sendLog(el, el.tagName.toLowerCase(),url);
+						this.warningCounter++;
+					}
+				}
+			},
+			
+			sendLog: function(el, type, url){
+				log.log({
+					url: location.href,
+					wtype: type,
+					wurl: url
+				});
+			}
+		};
+
+		function domReady(fn){
+		    if(document.addEventListener) {
+		        document.addEventListener('DOMContentLoaded', function() {
+		            document.removeEventListener('DOMContentLoaded',arguments.callee, false);
+		            fn();
+		        }, false);
+		    }else if(document.attachEvent) {
+		        document.attachEvent('onreadystatechange', function() {
+		            if(document.readyState == 'complete') {
+		                document.detachEvent('onreadystatechange', arguments.callee);
+		                fn();
+		            }
+		        });
+		    }
+		};
+
+		domReady(function(){
+			new HTTPSWarningLog();
+			for(var i=1; i<6; i++) {
+				!function(i){
+					setTimeout(function(){
+						new HTTPSWarningLog();
+					}, i*i*i*1000);
+				}(i);
+			}
+		});
+	}(document, window);
+</script>
+
+<meta name="baidu-site-verification" content="tfD6Ctznzp">
+<meta name="description" content="百度知道是全球最大的中文问答互动平台，每天为数亿网民答疑解惑。百度知道通过AI技术实现智能检索和智能推荐，让您的每个疑问都能够快速获得有效解答。">
+
+<script type="text/javascript">
+			!function(){var n={},t={};n.context=function(n,e){var i=arguments.length;if(i>1)t[n]=e;else if(1==i){if("object"!=typeof n)return t[n];for(var o in n)n.hasOwnProperty(o)&&(t[o]=n[o])}},"F"in window||(window.F=n)}();;
+			
+            
+																																							
+			F.context('user', {"isLogin":"","isRealName":"","stoken":"","name":"","imId":"","id":"","euid":"","wealth":"","gradeIndex":"1","isMavin":""});
+			F.context('user')['internalAdmin'] = null;
+
+									
+			            F.context('isQuality', false);
+            F.context('now', 1600529718);
+		</script>
+<script>F.context('sysTaskAutoInit', 1);</script>
+
+
+<!--[if lte IE 8]>
+<script>
+                (function(){
+                    var e="abbr,article,aside,audio,canvas,datalist,details,dialog,eventsource,figure,footer,header,hgroup,mark,menu,meter,nav,output,progress,section,time,video".split(","),
+                    i=e.length;
+                    while(i--){document.createElement(e[i])}
+                 })();
+            </script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="static/common/pkg/common.689d8d3.css"><link rel="stylesheet" type="text/css" href="static/home/pkg/module.a36ed27.css"><link rel="stylesheet" type="text/css" href="static/common/widget/header-metis/header.39c9ddf.css"><link rel="stylesheet" type="text/css" href="static/common/widget/set-tag/set-tag.0b3a009.css"><link rel="stylesheet" type="text/css" href="static/common/widget/task/task-last.1ba3b2d.css"></head>
+
+<script> alog('speed.set', 'ht', +new Date()); </script>
+
+<body class="layout-center home-search zhidao-index">
+
+<div id="userbar" class="userbar userbar-renew " data="">
+<ul class="aside-list">
+<li>
+<a href="javascript:;" class="toindex">百度首页</a>
+</li>
+<li><a rel="nofollow" alog-alias="usrbar-login" href="javascript:;" id="userbar-login" log="type:2026,pname:account,mod:login,action:show,pos:pop">登录</a></li>
+<li><a rel="nofollow" alog-alias="usrbar-reg" id="userbar-reg" href="javascript:;" target="_blank">注册</a></li>
+<li class="shop-entrance">
+<a href="javascript:;" title="知道商城" log="type:2026,pos:top-right,target:shop-entrance">商城<i class="i-house" style="display: none;"></i></a>
+<span class="lucky-try" style="display: none"></span>
+</li>
+</ul>
+</div>
+
+
+<div class="head-wrap">
+<hr class="divider">
+<header id="header" class="container">
+
+<div id="search-box" class="search-box-new line search-box-new-all">
+<ul class="channel grid">
+<li><a log="sc_pos:c_baidu" data-type='baidu' rel="nofollow" href="javascript:;">网页</a></li>
+<li><a log="sc_pos:c_news" data-type='news' rel="nofollow" href="index2.html">资讯</a></li>
+<li><a log="sc_pos:c_video" data-type='video' rel="nofollow" href="javascript:;">视频</a></li>
+<li><a log="sc_pos:c_pic" data-type='image' rel="nofollow" href="index9.html">图片</a></li>
+<li><strong>知道</strong></li>
+<li><a log="sc_pos:c_doc" data-type='wenku' rel="nofollow" href="javascript:;">文库</a></li>
+<li><a log="sc_pos:c_tieba" data-type='tieba' rel="nofollow" href="index4.html">贴吧</a></li><li><a log="sc_pos:c_b2b" data-type='b2b' rel="nofollow" href="javascript:;">采购</a></li>
+<li><a log="sc_pos:c_map" data-type='map' rel="nofollow" href="index3.html">地图</a></li></ul>
+<div class="search-block clearfix">
+<div class="search-cont clearfix">
+<a class="logo" href="" title="百度知道"></a>
+<form action="/search" name="search-form" method="get" id="search-form-new" class="search-form">
+<input class="hdi" id="kw" maxlength="256" tabindex="1" size="46" name="word" value="" autocomplete="off" placeholder="">
+<button alog-action="g-search-anwser" type="submit" id="search-btn" hidefocus="true" tabindex="2" class="btn-global">搜索答案</button>
+<a href="#" alog-action="g-i-ask" class="i-ask-link" id="ask-btn-new">我要提问</a>
+</form>
+</div>
+</div>
+</div>
+<script>
+                    // 搜索框可用时间打点
+                    alog && alog('speed.set', 'c_sbox', +new Date); alog.fire && alog.fire("mark");
+                </script>
+
+</header>
+</div>
+
+<div class="nav-menu-container" id="j-nav-menu-container">
+<div class="nav-show-control">
+<div class="nav-menu-layout">
+<div class="nav-menu line">
+<div class="nav-menu-content container">
+<div class="content-box">
+<div class="menu-item menu-item-index">
+<a class="menu-title current" href="">
+首页</a>
+</div>
+<div class="menu-item-box">
+<div class="menu-item menu-item-cat">
+<a class="menu-title " href="javascript:;" target="_blank">
+<span>在问<img class="triangle_icon" src="static/common/widget/menu/img/triangle.47e7008.svg" alt=""></span>
+</a>
+<div class="menu-content new-category-menu">
+<ul class="menu-sub-list">
+<li class="menu-sub-item-wp">
+<a class="menu-sub-item" href="javascript:;" target="_blank">
+全部问题</a>
+</li>
+<li class="menu-sub-item-wp odd">
+<a class="menu-sub-item" href="javascript:;" target="_blank">
+娱乐休闲</a>
+</li>
+<li class="menu-sub-item-wp odd">
+<a class="menu-sub-item" href="javascript:;" target="_blank">
+游戏</a>
+</li>
+<li class="menu-sub-item-wp">
+<a class="menu-sub-item" href="javascript:;" target="_blank">
+旅游</a>
+</li>
+<li class="menu-sub-item-wp odd">
+<a class="menu-sub-item" href="javascript:;" target="_blank">
+教育培训</a>
+</li>
+<li class="menu-sub-item-wp odd">
+<a class="menu-sub-item" href="javascript:;" target="_blank">
+金融财经</a>
+</li>
+<li class="menu-sub-item-wp">
+<a class="menu-sub-item" href="javascript:;" target="_blank">
+医疗健康</a>
+</li>
+<li class="menu-sub-item-wp odd">
+<a class="menu-sub-item" href="javascript:;" target="_blank">
+科技</a>
+</li>
+<li class="menu-sub-item-wp odd">
+<a class="menu-sub-item" href="javascript:;" target="_blank">
+家电数码</a>
+</li>
+<li class="menu-sub-item-wp">
+<a class="menu-sub-item" href="javascript:;" target="_blank">
+政策法规</a>
+</li>
+<li class="menu-sub-item-wp odd">
+<a class="menu-sub-item" href="javascript:;" target="_blank">
+文化历史</a>
+</li>
+<li class="menu-sub-item-wp odd">
+<a class="menu-sub-item" href="javascript:;" target="_blank">
+时尚美容</a>
+</li>
+<li class="menu-sub-item-wp">
+<a class="menu-sub-item" href="javascript:;" target="_blank">
+情感心理</a>
+</li>
+<li class="menu-sub-item-wp odd">
+<a class="menu-sub-item" href="javascript:;" target="_blank">
+汽车</a>
+</li>
+<li class="menu-sub-item-wp odd">
+<a class="menu-sub-item" href="javascript:;" target="_blank">
+生活</a>
+</li>
+<li class="menu-sub-item-wp">
+<a class="menu-sub-item" href="javascript:;" target="_blank">
+职业</a>
+</li>
+<li class="menu-sub-item-wp odd">
+<a class="menu-sub-item" href="javascript:;" target="_blank">
+母婴</a>
+</li>
+<li class="menu-sub-item-wp odd">
+<a class="menu-sub-item" href="javascript:;" target="_blank">
+三农</a>
+</li>
+<li class="menu-sub-item-wp">
+<a class="menu-sub-item" href="javascript:;" target="_blank">
+互联网</a>
+</li>
+<li class="menu-sub-item-wp odd">
+<a class="menu-sub-item" href="javascript:;" target="_blank">
+生产制造</a>
+</li>
+<li class="menu-sub-item-wp odd">
+<a class="menu-sub-item" href="javascript:;" target="_blank">
+其他</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="menu-item menu-item-lanmu">
+<a class="menu-title" href="javascript:;" target="_blank">
+<span>
+日报<img class="triangle_icon" src="static/common/widget/menu/img/triangle.47e7008.svg" alt="">
+</span>
+</a>
+<div class="menu-content">
+<ul class="menu-sub-list">
+<li class="menu-sub-item-wp">
+<a class="menu-sub-item" href="javascript:;" target="_blank">
+日报精选</a>
+</li>
+<li class="menu-sub-item-wp">
+<a class="menu-sub-item" href="javascript:;" target="_blank">
+日报广场</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="menu-item menu-item-user">
+<a class="menu-title" href="javascript:;" style="cursor: default">
+<span>
+用户<img class="triangle_icon" src="static/common/widget/menu/img/triangle.47e7008.svg" alt="">
+</span>
+</a>
+<div class="menu-content">
+<ul class="menu-sub-list">
+<li class="menu-sub-item-wp">
+<a class="menu-sub-item" href="javascript:;" target="_blank" data-type="cuser">
+认证用户</a>
+</li>
+<li class="menu-sub-item-wp">
+<a class="menu-sub-item" href="javascript:;" target="_blank" data-type="daily-author">
+日报作者</a>
+</li>
+<li class="menu-sub-item-wp">
+<a class="menu-sub-item" href="javascript:;" target="_blank" data-type="uteam">
+知道团队</a>
+</li>
+<li class="menu-sub-item-wp">
+<a class="menu-sub-item" href="javascript:;" target="_blank" data-type="cteam">
+认证团队</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="menu-item menu-item-expert">
+<a class="menu-title" href="javascript:;" target="_blank">
+<span>
+合伙人<img class="triangle_icon" src="static/common/widget/menu/img/triangle.47e7008.svg" alt="">
+</span>
+</a>
+<div class="menu-content">
+<ul class="menu-sub-list">
+<li class="menu-sub-item-wp">
+<a class="menu-sub-item" href="javascript:;" target="_blank" data-type="business">
+企业</a>
+</li>
+<li class="menu-sub-item-wp">
+<a class="menu-sub-item" href="javascript:;" target="_blank" data-type="media">
+媒体</a>
+</li>
+<li class="menu-sub-item-wp">
+<a class="menu-sub-item" href="javascript:;" target="_blank" data-type="government">
+政府</a>
+</li>
+<li class="menu-sub-item-wp">
+<a class="menu-sub-item" href="javascript:;" target="_blank" data-type="other">
+其他组织</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="menu-right-section">
+<ul class="menu-right-list">
+<li class="menu-right-list-item zhidao-shop">
+<a href="javascript:;" class="menu-right-list-link" target="_blank">
+<span class="item-name">
+商城</span>
+<span class="new-icon"></span>
+</a>
+</li>
+<li class="menu-right-list-item zhidao-app">
+<a href="javascript:;" class="menu-right-list-link" target="_blank">
+<span class="phone-icon"></span>
+<span class="item-name">
+手机答题</span>
+</a>
+</li>
+<li class="menu-right-list-item user-center">
+<a href="javascript:;" class="menu-right-list-link" target="_blank">
+<span class="item-icon">
+</span>
+<span class="item-name">
+我的</span>
+</a>
+</li>
+<li class="menu-right-list-item activity-entry"></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+        // 导航可用时间
+        alog && alog('speed.set', 'c_menu', +new Date); alog.fire && alog.fire("mark");
+    </script>
+
+<div id="body" class="container">
+
+<div class="banner-wp">
+<div class="banner container">
+<div class="banner-layout">
+<div class="banner-card-list">
+<a href="javascript:;" target="_blank" class="banner-card-item" data-type="banner">
+<div class="item-mask"></div>
+<img src="7051cy89Q1gCncy6lo7D0j9wexYrbOWh7c50/zhidaoribao/2020-09/0919/1.JPG" alt="" class="bg-blur">
+<div class="item-text-mask"></div>
+<div class="pic" style="background-image: url(7051cy89Q1gCncy6lo7D0j9wexYrbOWh7c50/zhidaoribao/2020-09/0919/1.JPG)"></div>
+<div class="ie-blur"></div>
+<div class="text-container">
+<div class="title">神奇的印度人到底是什么人种？</div>
+<div class="intro">实际上，印度人是白种人。</div>
+</div>
+</a>
+<a href="javascript:;" target="_blank" class="banner-card-item" data-type="banner">
+<div class="item-mask"></div>
+<img src="zhidaoribao/2020-09/0919/2.JPG" alt="" class="bg-blur">
+<div class="item-text-mask"></div>
+<div class="pic" style="background-image: url(zhidaoribao/2020-09/0919/2.JPG)"></div>
+<div class="ie-blur"></div>
+<div class="text-container">
+<div class="title">人类未来将如何灭绝？</div>
+<div class="intro">随着人类社会发展，人口过剩，失业率增加，会给人类带来的威胁。</div>
+</div>
+</a>
+<a href="javascript:;" target="_blank" class="banner-card-item" data-type="banner">
+<div class="item-mask"></div>
+<img src="zhidaoribao/2020-09/0919/3.JPG" alt="" class="bg-blur">
+<div class="item-text-mask"></div>
+<div class="pic" style="background-image: url(zhidaoribao/2020-09/0919/3.JPG)"></div>
+<div class="ie-blur"></div>
+<div class="text-container">
+<div class="title">我们的意识来自哪里？</div>
+<div class="intro">大脑中的长期记忆的海马体是不可分割的一部分。</div>
+</div>
+</a>
+<a href="javascript:;" target="_blank" class="banner-card-item" data-type="banner">
+<div class="item-mask"></div>
+<img src="7051cy89Q1gCncy6lo7D0j9wexYrbOWh7c50/zhidaoribao/2020-09/0919/44.JPG" alt="" class="bg-blur">
+<div class="item-text-mask"></div>
+<div class="pic" style="background-image: url(7051cy89Q1gCncy6lo7D0j9wexYrbOWh7c50/zhidaoribao/2020-09/0919/44.JPG)"></div>
+<div class="ie-blur"></div>
+<div class="text-container">
+<div class="title">地球寿命有多久，会如何死亡？</div>
+<div class="intro">看地球的寿命有多久，只要看太阳的寿命就可以了。</div>
+</div>
+</a>
+<a href="javascript:;" target="_blank" class="banner-card-item" data-type="banner">
+<div class="item-mask"></div>
+<img src="7051cy89Q1gCncy6lo7D0j9wexYrbOWh7c50/zhidaoribao/2020-09/0919/5.JPG" alt="" class="bg-blur">
+<div class="item-text-mask"></div>
+<div class="pic" style="background-image: url(7051cy89Q1gCncy6lo7D0j9wexYrbOWh7c50/zhidaoribao/2020-09/0919/5.JPG)"></div>
+<div class="ie-blur"></div>
+<div class="text-container">
+<div class="title">有机蔬果，健康还是骗局？</div>
+<div class="intro">超过两千万美国人加入了这场「胜利菜园」运动。</div>
+</div>
+</a>
+<a href="javascript:;" target="_blank" class="banner-card-item" data-type="banner">
+<div class="item-mask"></div>
+<img src="7051cy89RcgCncy6lo7D0j9wexYrbOWh7c50/zhidaoribao/2020-09/0918/1.PNG" alt="" class="bg-blur">
+<div class="item-text-mask"></div>
+<div class="pic" style="background-image: url(7051cy89RcgCncy6lo7D0j9wexYrbOWh7c50/zhidaoribao/2020-09/0918/1.PNG)"></div>
+<div class="ie-blur"></div>
+<div class="text-container">
+<div class="title">蝙蝠的祖先是翼龙还是老鼠？</div>
+<div class="intro">古蝠属，约4900万年前生活在德国，已经与现生食虫蝙蝠很相似了。</div>
+</div>
+</a>
+<a href="javascript:;" target="_blank" class="banner-card-item" data-type="banner">
+<div class="item-mask"></div>
+<img src="7051cy89Q1gCncy6lo7D0j9wexYrbOWh7c50/zhidaoribao/2020-09/0918/2.PNG" alt="" class="bg-blur">
+<div class="item-text-mask"></div>
+<div class="pic" style="background-image: url(7051cy89Q1gCncy6lo7D0j9wexYrbOWh7c50/zhidaoribao/2020-09/0918/2.PNG)"></div>
+<div class="ie-blur"></div>
+<div class="text-container">
+<div class="title">人类笑容是怎样起源与发展的？</div>
+<div class="intro">人类的笑容远比类人猿它们的“露齿笑”来得复杂。</div>
+</div>
+</a>
+<a href="javascript:;" target="_blank" class="banner-card-item" data-type="banner">
+<div class="item-mask"></div>
+<img src="7051cy89Q1gCncy6lo7D0j9wexYrbOWh7c50/zhidaoribao/2020-09/0918/3.JPG" alt="" class="bg-blur">
+<div class="item-text-mask"></div>
+<div class="pic" style="background-image: url(7051cy89Q1gCncy6lo7D0j9wexYrbOWh7c50/zhidaoribao/2020-09/0918/3.JPG)"></div>
+<div class="ie-blur"></div>
+<div class="text-container">
+<div class="title">水渗透无孔不入为何在地表循环？</div>
+<div class="intro">地球并不是太阳系中唯一有水的星球。</div>
+</div>
+</a>
+<a href="javascript:;" target="_blank" class="banner-card-item" data-type="banner">
+<div class="item-mask"></div>
+<img src="7051cy89Q1gCncy6lo7D0j9wexYrbOWh7c50/zhidaoribao/2020-09/0918/4.JPG" alt="" class="bg-blur">
+<div class="item-text-mask"></div>
+<div class="pic" style="background-image: url(7051cy89Q1gCncy6lo7D0j9wexYrbOWh7c50/zhidaoribao/2020-09/0918/4.JPG)"></div>
+<div class="ie-blur"></div>
+<div class="text-container">
+<div class="title">屏幕是怎么改变世界的？</div>
+<div class="intro">今天每个中国家庭平均拥有5.64块屏幕。</div>
+</div>
+</a>
+</div>
+</div>
+<div class="banner-card-tab-list">
+<span class="show-card-tab-item show-tab-item-current" data-index="0"></span>
+<span class="show-card-tab-item" data-index="1"></span>
+<span class="show-card-tab-item" data-index="2"></span>
+</div>
+<div class="slogan-widget">
+<div class="slogan-wp">
+<div class="slogan-content">
+<div class="not-login-mask"></div>
+<div class="not-login-slogan">
+<div class="title">
+<span>百度知道</span>
+<a href="javascript:;" target="_blank" class="icon"></a>
+</div>
+<div class="middle-content line">
+<p class="slogan-text">
+总有一个人知道<br>你问题的答案</p>
+<div class="not-login-slogan-bg"></div>
+</div>
+<div class="finish-count">
+<p class="finish-count-text">解决</p>
+<div class="finish-count-num line">
+<div class="count-num-item">
+<span class="num-item-scroll">0</span>
+<span class="num-item-scroll">1</span>
+<span class="num-item-scroll">2</span>
+<span class="num-item-scroll">3</span>
+<span class="num-item-scroll">4</span>
+<span class="num-item-scroll">5</span>
+<span class="num-item-scroll">6</span>
+<span class="num-item-scroll">7</span>
+<span class="num-item-scroll">8</span>
+<span class="num-item-scroll">9</span>
+<span class="num-item-scroll">0</span>
+<span class="num-item-scroll">1</span>
+<span class="num-item-scroll">2</span>
+<span class="num-item-scroll">3</span>
+<span class="num-item-scroll">4</span>
+<span class="num-item-scroll">5</span>
+<span class="num-item-scroll">6</span>
+<span class="num-item-scroll">7</span>
+<span class="num-item-scroll">8</span>
+<span class="num-item-scroll">9</span>
+</div>
+<div class="count-num-item">
+<span class="num-item-scroll">0</span>
+<span class="num-item-scroll">1</span>
+<span class="num-item-scroll">2</span>
+<span class="num-item-scroll">3</span>
+<span class="num-item-scroll">4</span>
+<span class="num-item-scroll">5</span>
+<span class="num-item-scroll">6</span>
+<span class="num-item-scroll">7</span>
+<span class="num-item-scroll">8</span>
+<span class="num-item-scroll">9</span>
+<span class="num-item-scroll">0</span>
+<span class="num-item-scroll">1</span>
+<span class="num-item-scroll">2</span>
+<span class="num-item-scroll">3</span>
+<span class="num-item-scroll">4</span>
+<span class="num-item-scroll">5</span>
+<span class="num-item-scroll">6</span>
+<span class="num-item-scroll">7</span>
+<span class="num-item-scroll">8</span>
+<span class="num-item-scroll">9</span>
+</div>
+<div class="count-num-item">
+<span class="num-item-scroll">0</span>
+<span class="num-item-scroll">1</span>
+<span class="num-item-scroll">2</span>
+<span class="num-item-scroll">3</span>
+<span class="num-item-scroll">4</span>
+<span class="num-item-scroll">5</span>
+<span class="num-item-scroll">6</span>
+<span class="num-item-scroll">7</span>
+<span class="num-item-scroll">8</span>
+<span class="num-item-scroll">9</span>
+<span class="num-item-scroll">0</span>
+<span class="num-item-scroll">1</span>
+<span class="num-item-scroll">2</span>
+<span class="num-item-scroll">3</span>
+<span class="num-item-scroll">4</span>
+<span class="num-item-scroll">5</span>
+<span class="num-item-scroll">6</span>
+<span class="num-item-scroll">7</span>
+<span class="num-item-scroll">8</span>
+<span class="num-item-scroll">9</span>
+</div>
+<div class="count-num-comma">
+,</div>
+<div class="count-num-item">
+<span class="num-item-scroll">0</span>
+<span class="num-item-scroll">1</span>
+<span class="num-item-scroll">2</span>
+<span class="num-item-scroll">3</span>
+<span class="num-item-scroll">4</span>
+<span class="num-item-scroll">5</span>
+<span class="num-item-scroll">6</span>
+<span class="num-item-scroll">7</span>
+<span class="num-item-scroll">8</span>
+<span class="num-item-scroll">9</span>
+<span class="num-item-scroll">0</span>
+<span class="num-item-scroll">1</span>
+<span class="num-item-scroll">2</span>
+<span class="num-item-scroll">3</span>
+<span class="num-item-scroll">4</span>
+<span class="num-item-scroll">5</span>
+<span class="num-item-scroll">6</span>
+<span class="num-item-scroll">7</span>
+<span class="num-item-scroll">8</span>
+<span class="num-item-scroll">9</span>
+</div>
+<div class="count-num-item">
+<span class="num-item-scroll">0</span>
+<span class="num-item-scroll">1</span>
+<span class="num-item-scroll">2</span>
+<span class="num-item-scroll">3</span>
+<span class="num-item-scroll">4</span>
+<span class="num-item-scroll">5</span>
+<span class="num-item-scroll">6</span>
+<span class="num-item-scroll">7</span>
+<span class="num-item-scroll">8</span>
+<span class="num-item-scroll">9</span>
+<span class="num-item-scroll">0</span>
+<span class="num-item-scroll">1</span>
+<span class="num-item-scroll">2</span>
+<span class="num-item-scroll">3</span>
+<span class="num-item-scroll">4</span>
+<span class="num-item-scroll">5</span>
+<span class="num-item-scroll">6</span>
+<span class="num-item-scroll">7</span>
+<span class="num-item-scroll">8</span>
+<span class="num-item-scroll">9</span>
+</div>
+<div class="count-num-item">
+<span class="num-item-scroll">0</span>
+<span class="num-item-scroll">1</span>
+<span class="num-item-scroll">2</span>
+<span class="num-item-scroll">3</span>
+<span class="num-item-scroll">4</span>
+<span class="num-item-scroll">5</span>
+<span class="num-item-scroll">6</span>
+<span class="num-item-scroll">7</span>
+<span class="num-item-scroll">8</span>
+<span class="num-item-scroll">9</span>
+<span class="num-item-scroll">0</span>
+<span class="num-item-scroll">1</span>
+<span class="num-item-scroll">2</span>
+<span class="num-item-scroll">3</span>
+<span class="num-item-scroll">4</span>
+<span class="num-item-scroll">5</span>
+<span class="num-item-scroll">6</span>
+<span class="num-item-scroll">7</span>
+<span class="num-item-scroll">8</span>
+<span class="num-item-scroll">9</span>
+</div>
+<div class="count-num-comma">
+,</div>
+<div class="count-num-item">
+<span class="num-item-scroll">0</span>
+<span class="num-item-scroll">1</span>
+<span class="num-item-scroll">2</span>
+<span class="num-item-scroll">3</span>
+<span class="num-item-scroll">4</span>
+<span class="num-item-scroll">5</span>
+<span class="num-item-scroll">6</span>
+<span class="num-item-scroll">7</span>
+<span class="num-item-scroll">8</span>
+<span class="num-item-scroll">9</span>
+<span class="num-item-scroll">0</span>
+<span class="num-item-scroll">1</span>
+<span class="num-item-scroll">2</span>
+<span class="num-item-scroll">3</span>
+<span class="num-item-scroll">4</span>
+<span class="num-item-scroll">5</span>
+<span class="num-item-scroll">6</span>
+<span class="num-item-scroll">7</span>
+<span class="num-item-scroll">8</span>
+<span class="num-item-scroll">9</span>
+</div>
+<div class="count-num-item">
+<span class="num-item-scroll">0</span>
+<span class="num-item-scroll">1</span>
+<span class="num-item-scroll">2</span>
+<span class="num-item-scroll">3</span>
+<span class="num-item-scroll">4</span>
+<span class="num-item-scroll">5</span>
+<span class="num-item-scroll">6</span>
+<span class="num-item-scroll">7</span>
+<span class="num-item-scroll">8</span>
+<span class="num-item-scroll">9</span>
+<span class="num-item-scroll">0</span>
+<span class="num-item-scroll">1</span>
+<span class="num-item-scroll">2</span>
+<span class="num-item-scroll">3</span>
+<span class="num-item-scroll">4</span>
+<span class="num-item-scroll">5</span>
+<span class="num-item-scroll">6</span>
+<span class="num-item-scroll">7</span>
+<span class="num-item-scroll">8</span>
+<span class="num-item-scroll">9</span>
+</div>
+<div class="count-num-item">
+<span class="num-item-scroll">0</span>
+<span class="num-item-scroll">1</span>
+<span class="num-item-scroll">2</span>
+<span class="num-item-scroll">3</span>
+<span class="num-item-scroll">4</span>
+<span class="num-item-scroll">5</span>
+<span class="num-item-scroll">6</span>
+<span class="num-item-scroll">7</span>
+<span class="num-item-scroll">8</span>
+<span class="num-item-scroll">9</span>
+<span class="num-item-scroll">0</span>
+<span class="num-item-scroll">1</span>
+<span class="num-item-scroll">2</span>
+<span class="num-item-scroll">3</span>
+<span class="num-item-scroll">4</span>
+<span class="num-item-scroll">5</span>
+<span class="num-item-scroll">6</span>
+<span class="num-item-scroll">7</span>
+<span class="num-item-scroll">8</span>
+<span class="num-item-scroll">9</span>
+</div>
+</div>
+<p class="finish-count-text">个问题</p>
+</div>
+<p class="iknow-need-know">
+<a href="javascript:;" target="_blank" class="iknow-need-know-link">
+知道须知</a>
+</p>
+<div class="answer-question-section">
+<a href="javascript:;" target="_blank" class="not-login-button-item question-button">
+<div class="item-logo question-button-logo"></div>
+<span class="item-title">我要提问</span>
+</a>
+<a href="javascript:;" target="_blank" class="not-login-button-item answer-button">
+<div class="item-logo answer-button-logo"></div>
+<span class="item-title">我来回答</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="wgt-two-layout" style="background: #fff;height: 458px;">
+<div class="wgt-two-layout-wp container">
+<div class="wgt-two-layout-left">
+<div class="wgt-discussion">
+<div class="wgt-discussion-title">大家热议</div>
+<div class="wgt-discussion-list">
+<a href="javascript:;" target="_blank" class="discussion-big" style="background-image:url(30adcbef76094b36d0bbc790b3cc7cd9.jpg)">
+<div class="mask"></div>
+<div class="text-container">
+<div class="title">小孩子一年级字写的丑该不该管教纠正？</div>
+<div class="intro">一年级刚开始正式的去接触写字学习之类的东西，更多的应该是鼓励，每次写字进步的时候给鼓励就好，没有必要刻意去纠正，毕竟还小，慢慢来。</div>
+<div class="statistics">
+<img src="sys/portrait/item/cb2c3139382a2a2a2a2a2a303753ea.jpg" alt="" class="avatar">
+<span class="name">198******07</span>
+<span class="point"></span>
+<span class="thumb-num">1点赞</span>
+<div class="discuss-num">1074人参与讨论</div>
+</div>
+</div>
+</a>
+<div class="discussion-small-list">
+<a href="javascript:;" target="_blank" class="discussion-small" style="background-image:url(8644ebf81a4c510f20bc927d6f59252d.jpg)">
+<div class="mask"></div>
+<div class="text-container">
+<div class="title">自以为伟大的放手是自私吗？</div>
+<div class="discuss-num">3618人参与讨论</div>
+</div>
+</a>
+<a href="javascript:;" target="_blank" class="discussion-small" style="background-image:url(3b87e950352ac65c5da9500eebf2b211.jpg)">
+<div class="mask"></div>
+<div class="text-container">
+<div class="title">你觉得选择比努力更重要对吗？</div>
+<div class="discuss-num">1987人参与讨论</div>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="wgt-two-layout-right">
+<div class="wgt-recommend">
+<div class="wgt-discussion-title">精彩推荐</div>
+<div class="recommend-list">
+<div class="recommend-item">
+<div class="title-box">
+<a href="javascript:;" style="padding-left: 0" class="title" target="_blank">你觉得谢霆锋的厨艺在哪一个级别？</a>
+</div>
+<a href="javascript:;" class="intro" target="_blank">会点吧，如果你找个星级酒店的厨房佬评价一下，近的找个炒得一手好菜的妈妈（嫲嫲）问一下...</a>
+<div class="meta">
+<img src="sys/portrait/item/11b03131c7f8b9d6ab46d7d01835.jpg" alt="" class="avatar">
+<span class="name">11区怪獸仔</span>
+<span class="time">2018.01.10</span>
+</div>
+</div>
+<div class="recommend-item">
+<div class="title-box">
+<a href="javascript:;" style="padding-left: 0" class="title" target="_blank">最便宜的宝马敞篷车是哪款？值得购买么？</a>
+</div>
+<a href="javascript:;" class="intro" target="_blank">该品牌敞篷车价格最低的我想就是他们2系中的218i了，这款车的裸车价格也只要三十万不到的样...</a>
+<div class="meta">
+<img src="sys/portrait/item/4cebbfb8d7c5b5a5b3b5c8a5bfb4baa3.jpg" alt="" class="avatar">
+<span class="name">扛着单车去看海</span>
+<span class="time">2019.04.28</span>
+</div>
+</div>
+<div class="recommend-item">
+<div class="title-box">
+<a href="javascript:;" style="padding-left: 0" class="title" target="_blank">ReFa美容仪使用方法</a>
+</div>
+<a href="javascript:;" class="intro" target="_blank">ReFa美容仪现在基本人手一个了吧，前两年火的不行，型号还巨多，面部两轮的，身体四轮的，...</a>
+<div class="meta">
+<img src="sys/portrait/item/1d6b73786875697875658d4e.jpg" alt="" class="avatar">
+<span class="name">sxhuixue</span>
+<span class="time">2019.02.27</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="wgt-two-layout" style="background: #F4F5F7;height: 514px;">
+<div class="wgt-two-layout-wp container">
+<div class="wgt-two-layout-left">
+<div class="wgt-influence-rank">
+<div class="wgt-influence-rank-title">影响力排行</div>
+<div class="rank-list">
+<div class="rank-item">
+<div class="top-banner green">日报作者</div>
+<div class="rank-user
+                     first
+                    ">
+<span class="order">1</span>
+<a href="javascript:;" class="avatar-con" target="_blank" data-type="daily">
+<img src="f603918fa0ec08fa31cce78056ee3d6d.jpg" alt="" class="avatar">
+</a>
+<div class="text-con">
+<div class="name"><a href="javascript:;" target="_blank" class="link" data-type="daily">科学黑洞</a></div>
+<span class="read-num">1kw+阅读</span>
+<span class="point"></span>
+<span class="thumb-num">8kw+热度</span>
+</div>
+</div>
+<div class="rank-user
+                     second
+                    ">
+<span class="order">2</span>
+<a href="javascript:;" class="avatar-con" target="_blank" data-type="daily">
+<img src="91529822720e0cf31cd31dc90546f21f.jpg" alt="" class="avatar">
+</a>
+<div class="text-con">
+<div class="name"><a href="javascript:;" target="_blank" class="link" data-type="daily">量子科学论</a></div>
+<span class="read-num">1kw+阅读</span>
+<span class="point"></span>
+<span class="thumb-num">3kw+热度</span>
+</div>
+</div>
+<div class="rank-user
+                     third">
+<span class="order">3</span>
+<a href="javascript:;" class="avatar-con" target="_blank" data-type="daily">
+<img src="2f738bd4b31c87017c9fa0ee287f9e2f.jpg" alt="" class="avatar">
+</a>
+<div class="text-con">
+<div class="name"><a href="javascript:;" target="_blank" class="link" data-type="daily">胖福的小木屋</a></div>
+<span class="read-num">900w+阅读</span>
+<span class="point"></span>
+<span class="thumb-num">2kw+热度</span>
+</div>
+</div>
+<div class="rank-user
+                    ">
+<span class="order">4</span>
+<a href="javascript:;" class="avatar-con" target="_blank" data-type="daily">
+<img src="72f082025aafa40f48e61a28a664034f.jpg" alt="" class="avatar">
+</a>
+<div class="text-con">
+<div class="name"><a href="javascript:;" target="_blank" class="link" data-type="daily">龙源期刊网</a></div>
+<span class="read-num">1kw+阅读</span>
+<span class="point"></span>
+<span class="thumb-num">1kw+热度</span>
+</div>
+</div>
+<div class="rank-user
+                    ">
+<span class="order">5</span>
+<a href="javascript:;" class="avatar-con" target="_blank" data-type="daily">
+<img src="63d9f2d3572c11df1c23ef566d2762d0.jpg" alt="" class="avatar">
+</a>
+<div class="text-con">
+<div class="name"><a href="javascript:;" target="_blank" class="link" data-type="daily">星辰大海路上的种花家</a></div>
+<span class="read-num">1kw+阅读</span>
+<span class="point"></span>
+<span class="thumb-num">1kw+热度</span>
+</div>
+</div>
+</div>
+<div class="rank-item">
+<div class="top-banner orange">优秀答主</div>
+<div class="rank-user
+                     first
+                    ">
+<span class="order">1</span>
+<a href="javascript:;" class="avatar-con" target="_blank" data-type="reply">
+<img src="7Ls0a8Sm1A5BphGlnYG/sys/portrait/item/8548626f74656e616fb848.jpg" alt="" class="avatar">
+</a>
+<div class="text-con">
+<div class="name"><a href="javascript:;" target="_blank" class="link" data-type="reply">botenao</a></div>
+<span class="read-num">5320回答</span>
+<span class="point"></span>
+<span class="thumb-num">4540点赞</span>
+</div>
+</div>
+<div class="rank-user
+                     second
+                    ">
+<span class="order">2</span>
+<a href="javascript:;" class="avatar-con" target="_blank" data-type="reply">
+<img src="7Ls0a8Sm1A5BphGlnYG/sys/portrait/item/8033b5c4c8cb35354a05.jpg" alt="" class="avatar">
+</a>
+<div class="text-con">
+<div class="name"><a href="javascript:;" target="_blank" class="link" data-type="reply">的人55</a></div>
+<span class="read-num">3.5w回答</span>
+<span class="point"></span>
+<span class="thumb-num">16w+点赞</span>
+</div>
+</div>
+<div class="rank-user
+                     third">
+<span class="order">3</span>
+<a href="javascript:;" class="avatar-con" target="_blank" data-type="reply">
+<img src="7Ls0a8Sm1A5BphGlnYG/sys/portrait/item/44a16261696c616e68756179616e6e07.jpg" alt="" class="avatar">
+</a>
+<div class="text-con">
+<div class="name"><a href="javascript:;" target="_blank" class="link" data-type="reply">bailanhuayan</a></div>
+<span class="read-num">10w+回答</span>
+<span class="point"></span>
+<span class="thumb-num">9.4w点赞</span>
+</div>
+</div>
+<div class="rank-user
+                    ">
+<span class="order">4</span>
+<a href="javascript:;" class="avatar-con" target="_blank" data-type="reply">
+<img src="7Ls0a8Sm1A5BphGlnYG/sys/portrait/item/19e243414f48414e4a56419e2b.jpg" alt="" class="avatar">
+</a>
+<div class="text-con">
+<div class="name"><a href="javascript:;" target="_blank" class="link" data-type="reply">CAOHANJVA</a></div>
+<span class="read-num">11w+回答</span>
+<span class="point"></span>
+<span class="thumb-num">20w+点赞</span>
+</div>
+</div>
+<div class="rank-user
+                    ">
+<span class="order">5</span>
+<a href="javascript:;" class="avatar-con" target="_blank" data-type="reply">
+<img src="7Ls0a8Sm1A5BphGlnYG/sys/portrait/item/58f4baecc9abc1d4c8cb676578696e46.jpg" alt="" class="avatar">
+</a>
+<div class="text-con">
+<div class="name"><a href="javascript:;" target="_blank" class="link" data-type="reply">红色猎人gexin</a></div>
+<span class="read-num">30w+回答</span>
+<span class="point"></span>
+<span class="thumb-num">44w+点赞</span>
+</div>
+</div>
+</div>
+<div class="rank-item">
+<div class="top-banner blue">优质团队</div>
+<div class="rank-user
+                     first
+                    ">
+<span class="order">1</span>
+<a href="javascript:;" class="avatar-con" target="_blank" data-type="uteam">
+<img src="d000baa1cd11728bf18abae0c5fcc3ce.jpg" alt="" class="avatar">
+</a>
+<div class="text-con">
+<div class="name"><a href="javascript:;" target="_blank" class="link" data-type="uteam">星星之火</a></div>
+<span class="read-num">87w+回答</span>
+<span class="point"></span>
+<span class="thumb-num">36w+采纳</span>
+</div>
+</div>
+<div class="rank-user
+                     second
+                    ">
+<span class="order">2</span>
+<a href="javascript:;" class="avatar-con" target="_blank" data-type="uteam">
+<img src="95eef01f3a292df58bc68696b1315c60.jpg" alt="" class="avatar">
+</a>
+<div class="text-con">
+<div class="name"><a href="javascript:;" target="_blank" class="link" data-type="uteam">心之所向唯自由</a></div>
+<span class="read-num">77w+回答</span>
+<span class="point"></span>
+<span class="thumb-num">26w+采纳</span>
+</div>
+</div>
+<div class="rank-user
+                     third">
+<span class="order">3</span>
+<a href="javascript:;" class="avatar-con" target="_blank" data-type="uteam">
+<img src="7aec54e736d12f2eed50b95743c2d562.jpg" alt="" class="avatar">
+</a>
+<div class="text-con">
+<div class="name"><a href="javascript:;" target="_blank" class="link" data-type="uteam">正气法律达人团</a></div>
+<span class="read-num">74w+回答</span>
+<span class="point"></span>
+<span class="thumb-num">37w+采纳</span>
+</div>
+</div>
+<div class="rank-user
+                    ">
+<span class="order">4</span>
+<a href="javascript:;" class="avatar-con" target="_blank" data-type="uteam">
+<img src="94o3dSag_xI4khGko9WTAnF6hhy/album/pic/item/c8177f3e6709c93d57ebae9b9d3df8dc.jpg" alt="" class="avatar">
+</a>
+<div class="text-con">
+<div class="name"><a href="javascript:;" target="_blank" class="link" data-type="uteam">赢商天下</a></div>
+<span class="read-num">9.6w回答</span>
+<span class="point"></span>
+<span class="thumb-num">4.9w采纳</span>
+</div>
+</div>
+<div class="rank-user
+                    ">
+<span class="order">5</span>
+<a href="javascript:;" class="avatar-con" target="_blank" data-type="uteam">
+<img src="d01373f082025aafc9cb3e20f5edab64.jpg" alt="" class="avatar">
+</a>
+<div class="text-con">
+<div class="name"><a href="javascript:;" target="_blank" class="link" data-type="uteam">生活达人</a></div>
+<span class="read-num">2.5w回答</span>
+<span class="point"></span>
+<span class="thumb-num">1.6w采纳</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="wgt-two-layout-right">
+<div class="wgt-activity">
+<div class="wgt-activity-title">活动公告</div>
+<div class="activity-list">
+<a href="javascript:;" class="activity-item" target="_blank">商城冲榜兑活动规则&榜单公布</a>
+<a href="question/1954462181868002908-true_1.html" class="activity-item" target="_blank">明星粉丝节活动奖品延期发货</a>
+<a href="javascript:;" class="activity-item" target="_blank">知道商城任务兑换公告</a>
+<a href="javascript:;" class="activity-item" target="_blank">帮助手册：如何使用知道</a>
+<a href="javascript:;" class="activity-item" target="_blank">活动须知：百度知道站内活动违规处罚标准</a>
+</div>
+<div class="banner-list">
+<a href="javascript:;" target="_blank" class="ad-link" data-index="0">
+<img src="yiqing-540X230.jpg" alt="" class="banner">
+</a>
+<a href="javascript:;" target="_blank" class="ad-link" data-index="1">
+<img src="trishafish0907gonggao.PNG" alt="" class="banner">
+</a>
+</div>
+</div>
+</div>
+</div>
+</div><div class="wgt-business container">
+<div class="wgt-business-title">权威机构</div>
+<div class="business-list">
+<div class="business-item">
+<a href="javascript:;" target="_blank" class="link">
+<img src="42edc22bbadc9c3bb045bb0f5b39c18d.jpeg" alt="" class="avatar">
+<div class="name">长春市人民政府...</div>
+</a>
+<div class="stastics">
+<span class="reply-num">1.5w回答</span>
+<span class="point"></span>
+<span class="thumb-num">525赞</span>
+</div>
+</div>
+<div class="business-item">
+<a href="javascript:;" target="_blank" class="link">
+<img src="771b6b01a90a45d441ec30952580afa4.jpeg" alt="" class="avatar">
+<div class="name">12366北京中心</div>
+</a>
+<div class="stastics">
+<span class="reply-num">2138回答</span>
+<span class="point"></span>
+<span class="thumb-num">3649赞</span>
+</div>
+</div>
+<div class="business-item">
+<a href="javascript:;" target="_blank" class="link">
+<img src="b21bb051f819861859764d674ced2e73.jpg" alt="" class="avatar">
+<div class="name">中国联通</div>
+</a>
+<div class="stastics">
+<span class="reply-num">83w+回答</span>
+<span class="point"></span>
+<span class="thumb-num">44w+赞</span>
+</div>
+</div>
+<div class="business-item">
+<a href="javascript:;" target="_blank" class="link">
+<img src="a20c2df920ce41e3168cca66fc6fe95f.jpeg" alt="" class="avatar">
+<div class="name">华为终端客服</div>
+</a>
+<div class="stastics">
+<span class="reply-num">28w+回答</span>
+<span class="point"></span>
+<span class="thumb-num">34w+赞</span>
+</div>
+</div>
+<div class="business-item">
+<a href="javascript:;" target="_blank" class="link">
+<img src="05385ee218a1e983e5fbec09566989e7.jpeg" alt="" class="avatar">
+<div class="name">蚂蚁金服客户中...</div>
+</a>
+<div class="stastics">
+<span class="reply-num">6.4w回答</span>
+<span class="point"></span>
+<span class="thumb-num">21w+赞</span>
+</div>
+</div>
+<div class="business-item">
+<a href="javascript:;" target="_blank" class="link">
+<img src="8fa4f4792c705dcd7ddbed79d85bcd41.jpeg" alt="" class="avatar">
+<div class="name">招商银行</div>
+</a>
+<div class="stastics">
+<span class="reply-num">72w+回答</span>
+<span class="point"></span>
+<span class="thumb-num">21w+赞</span>
+</div>
+</div>
+<div class="business-item">
+<a href="javascript:;" target="_blank" class="link">
+<img src="baa3e08b7df5ab38f955b7d232f483dd.jpeg" alt="" class="avatar">
+<div class="name">凯迪拉克</div>
+</a>
+<div class="stastics">
+<span class="reply-num">5018回答</span>
+<span class="point"></span>
+<span class="thumb-num">2507赞</span>
+</div>
+</div>
+</div>
+</div>
+<div class="shadow-show"></div>
+<button class="task-list-button" data-action="task-list-button">
+<div class="receive-awards-bubble" data-task-num="0">领取奖励</div>
+<div class="earn-points-exchange-gifts-bubble"></div>
+</button>
+<div class="task-panel">
+<div class="task-panel-head"></div>
+<div class="task-panel-property">
+<div class="single-property">
+<p class="property-type">我的财富值</p>
+<div class="login-wealth-area clearfix" style="display: none">
+<p class="property-amount" style="min-width:80px">0</p>
+<a target="_blank" href="javascript:;" class="property-button exchange-commodity">兑换商品</a>
+</div>
+<div class="unlogin-wealth-area clearfix">
+<p class="property-amount" style="min-width:80px">--</p>
+<a href="javascript:void(0);" class="property-button login-btn">去登录</a>
+</div>
+</div>
+<div class="v-line"></div>
+<div class="single-property">
+<p class="property-type">我的现金</p>
+<div class="login-cash-area clearfix" style="display:none">
+<p class="property-amount" style="min-width:65px">0</p>
+<a class="property-button get-cash">提现</a>
+<div class="get-cash-pop-ups hidden">
+<div src="./img/get-cash-tip.png__sprite" class="get-cash-tip"></div>
+<div class="get-cash-content">
+<p class="text-guidance">下载百度知道APP<br>在APP端-任务中心提现</p>
+<div src="./img/na-qr-code.png__sprite" class="na-qr-code-img"></div>
+<p class="known-button">我知道了</p>
+<div class="submit-button-shadow"></div>
+</div>
+</div>
+</div>
+<div class="unlogin-cash-area clearfix">
+<p class="property-amount" style="min-width:65px">--</p>
+<a href="javascript:void(0);" class="property-button login-btn">去登录</a>
+</div>
+</div>
+</div>
+<div class="task-panel-box">
+<div class="task-box-desc">做任务开宝箱</div>
+<div class="task-finish-desc">
+<p class="task-finish-text">累计完成</p>
+<ul class="task-finish-num">
+<li class="finish-num-item">0</li>
+</ul>
+<p class="task-finish-text">个任务</p>
+</div>
+<div class="box-container">
+<div class="gray-bar"></div>
+<div class="progress-bar"></div>
+<ul class="task-boxes">
+<li class="task-box-item" data-id="0" data-box-status="1" data-task-num="10">
+<p class="box-img copper-box"></p>
+<p class="box-index">10任务</p>
+<p class="can-receive-bubble hidden"></p>
+<p class="aperture hidden "></p>
+<div class="unfinished-bubble-container hidden">
+<div class="unfinished-bubble">
+<p class="unfinished-bubble-content">略略略略…</p>
+</div>
+<div class="unfinished-bubble-tip"></div>
+</div>
+</li>
+<li class="task-box-item" data-id="1" data-box-status="1" data-task-num="50">
+<p class="box-img silver-box"></p>
+<p class="box-index">50任务</p>
+<p class="can-receive-bubble hidden"></p>
+<p class="aperture hidden "></p>
+<div class="unfinished-bubble-container hidden">
+<div class="unfinished-bubble">
+<p class="unfinished-bubble-content">略略略略…</p>
+</div>
+<div class="unfinished-bubble-tip"></div>
+</div>
+</li>
+<li class="task-box-item" data-id="2" data-box-status="1" data-task-num="100">
+<p class="box-img gold-box"></p>
+<p class="box-index">100任务</p>
+<p class="can-receive-bubble hidden"></p>
+<p class="aperture hidden "></p>
+<div class="unfinished-bubble-container hidden">
+<div class="unfinished-bubble">
+<p class="unfinished-bubble-content">略略略略…</p>
+</div>
+<div class="unfinished-bubble-tip"></div>
+</div>
+</li>
+<li class="task-box-item" data-id="3" data-box-status="1" data-task-num="200">
+<p class="box-img diamond-box"></p>
+<p class="box-index">200任务</p>
+<p class="can-receive-bubble hidden"></p>
+<p class="aperture hidden "></p>
+<div class="unfinished-bubble-container hidden">
+<div class="unfinished-bubble">
+<p class="unfinished-bubble-content">略略略略…</p>
+</div>
+<div class="unfinished-bubble-tip"></div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="task-panel-list">
+<div class="loading">任务列表加载中...</div>
+</div>
+</div>
+<div class="open-box-shadow-show"></div>
+
+</div>
+
+
+<div class="wgt-footer-new">
+<div class="footer-wp">
+<ul class="footer-list clearfix">
+<li class="footer-list-item footer-list-guide">
+<div class="footer-title"><span class="icon-guide"></span>新手帮助</div>
+<ul class="footer-link clearfix">
+<li><a href="javascript:;" target="_blank">如何答题</a></li>
+<li><a href="javascript:;" target="_blank">获取采纳</a></li>
+<li><a href="javascript:;" target="_blank">使用财富值</a></li>
+</ul>
+</li>
+<li class="footer-list-item footer-list-intro">
+<div class="footer-title"><span class="icon-intro"></span>玩法介绍</div>
+<ul class="footer-link clearfix">
+<li><a href="javascript:;" target="_blank">知道商城</a></li>
+<li><a href="pcs/tuandui/index.html" target="_blank">知道团队</a></li>
+<li><a href="javascript:;" target="_blank">合伙人认证</a></li>
+<li><a href="api/proxy-shi-qualityindex.html.html" target="_blank">高质量问答</a></li>
+</ul>
+</li>
+<li class="footer-list-item footer-list-sug">
+<div class="user-tip" id="js-footer-user-tip" style="display: none;">
+<p class="title">您的帐号状态正常</p>
+<p class="desc">感谢您对我们的支持</p>
+</div>
+<div class="footer-title"><span class="icon-sug"></span>投诉建议</div>
+<ul class="footer-link clearfix">
+<li><a href="javascript:;" log="module:common,action:click,area:footer_feedback" target="_blank" id="footer-feedback">意见反馈</a></li>
+<li><a href="javascript:;" log="module:common,action:click,area:footer_appeal" target="_blank" id="js-footer-appeal">账号申诉</a></li>
+<li><a href="javascript:;" log="module:common,action:click,area:footer_report" target="_blank" id="js-footer-report">非法信息举报</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="footer-new">
+<p class="jt1128">
+京ICP证030173号-1&nbsp;&nbsp;&nbsp;京网文【2013】0934-983号&nbsp;&nbsp;&nbsp;&nbsp;        &copy;2020Baidu&nbsp;&nbsp;<a rel="nofollow" href="javascript:;" target="_blank">使用百度前必读</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a rel="nofollow" href="javascript:;" target="_blank">知道协议</a>&nbsp;&nbsp;</p>
+</div>
+</div>
+
+
+
+
+
+<script>
+    void function(a,b,c,d,e,f){function g(b){a.attachEvent?a.attachEvent("onload",b,!1):a.addEventListener&&a.addEventListener("load",b)}function h(a,c,d){d=d||15;var e=new Date;e.setTime((new Date).getTime()+1e3*d),b.cookie=a+"="+escape(c)+";path=/;expires="+e.toGMTString()}function i(a){var c=b.cookie.match(new RegExp("(^| )"+a+"=([^;]*)(;|$)"));return null!=c?unescape(c[2]):null}function j(){var a=i("PMS_JT");if(a){h("PMS_JT","",-1);try{a=a.match(/{["']s["']:(\d+),["']r["']:["']([\s\S]+)["']}/),a=a&&a[1]&&a[2]?{s:parseInt(a[1]),r:a[2]}:{}}catch(c){a={}}a.r&&b.referrer.replace(/#.*/,"")!=a.r||alog("speed.set","wt",a.s)}}if(a.alogObjectConfig){var k=a.alogObjectConfig.sample,l=a.alogObjectConfig.rand;d="https:"===a.location.protocol?"https://fex.bdstatic.com"+d:"http://fex.bdstatic.com"+d,k&&l&&l>k||(g(function(){alog("speed.set","lt",+new Date),e=b.createElement(c),e.async=!0,e.src=d+"?v="+~(new Date/864e5)+~(new Date/864e5),f=b.getElementsByTagName(c)[0],f.parentNode.insertBefore(e,f)}),j())}}(window,document,"script","/hunter/alog/dp.min.js");
+    </script>
+
+<script>
+				var _hmt = _hmt || [];
+				(function() {
+					var hm = document.createElement("script");
+					hm.src = "https://hm.baidu.com/hm.js?6859ce5aaf00fb00387e6434e4fcc925";
+					var s = document.getElementsByTagName("script")[0];
+					s.parentNode.insertBefore(hm, s);
+				})();
+			</script>
+
+<script type="text/javascript"> window.tt = 1600529718;</script>
+</body><script type="text/javascript" src="static/common/lib/mod.75d1f98.js"></script><script nonce="" type="text/javascript">(window.__IKNOW_GLOBAL__ || window).require.resourceMap({"res":{"common:widget\/lib\/jquery\/jquery.origin.js":{"pkg":"common:p3"},"common:widget\/js\/util\/event\/event.js":{"pkg":"common:p6","deps":["common:widget\/lib\/jquery\/jquery.js"]},"common:widget\/bottom-ask\/bottom-ask.js":{"pkg":"common:p0","deps":["common:widget\/js\/util\/tangram\/tangram.js","common:widget\/js\/util\/event\/event.js","common:widget\/js\/util\/log\/log.js"]},"common:widget\/css\/fonts\/iconfont.js":{"pkg":"common:p0"},"common:widget\/css\/fonts\/iconfont.min.js":{"pkg":"common:p0"},"common:widget\/footer-new\/footer-new.js":{"pkg":"common:p0","deps":["common:widget\/lib\/jquery\/jquery.js","common:widget\/js\/util\/event\/event.js"]},"common:widget\/footer\/footer.js":{"pkg":"common:p0"},"common:widget\/header-metis\/header.js":{"pkg":"common:p0","deps":["common:widget\/lib\/jquery\/jquery.js","common:widget\/js\/ui\/dialog\/dialog.js","common:widget\/js\/util\/template\/template.js","common:widget\/js\/ui\/scrollbar-new\/scrollbar-new.js","common:widget\/js\/util\/store\/store.js"]},"common:widget\/menu\/menu.js":{"pkg":"common:p0","deps":["common:widget\/js\/util\/tangram\/tangram.js","common:widget\/js\/util\/log\/log.js"]},"common:widget\/search-box-new\/search-box-new.js":{"pkg":"common:p0","deps":["common:widget\/js\/util\/tangram\/tangram.js","common:widget\/js\/ui\/suggestion-new\/suggestion-new.js","common:widget\/js\/util\/event\/event.js","common:widget\/js\/util\/form\/form.js","common:widget\/js\/util\/log\/log.js","common:widget\/js\/ui\/dialog\/dialog.js","common:widget\/lib\/jquery.placeholder\/jquery.placeholder.js"]},"common:widget\/set-tag\/set-tag.js":{"pkg":"common:p0","deps":["common:widget\/js\/util\/tangram\/tangram.js","common:widget\/js\/util\/template\/template.js","common:widget\/js\/ui\/scrollbar\/scrollbar.js","common:widget\/js\/ui\/dialog\/dialog.js","common:widget\/lib\/jquery.ui\/jquery.ui.sortable.js"]},"common:widget\/task\/task-last.js":{"pkg":"common:p0","deps":["common:widget\/js\/util\/tangram\/tangram.js","common:widget\/js\/util\/log\/log.js","common:widget\/js\/util\/event\/event.js","common:widget\/js\/ui\/dialog\/dialog.js","common:widget\/js\/util\/https\/https.js","common:widget\/js\/ui\/pop-tip\/pop-tip.js","common:widget\/js\/util\/template\/template.js","common:widget\/js\/logic\/signin-task\/signin-task.js"]},"common:widget\/userbar-renew\/userbar-renew.js":{"pkg":"common:p0","deps":["common:widget\/js\/util\/tangram\/tangram.js","common:widget\/js\/util\/event\/event.js","common:widget\/js\/logic\/login\/login.js","common:widget\/js\/util\/log\/log.js","common:widget\/js\/util\/store\/store.js"]},"home:widget\/activity\/activity.js":{"pkg":"home:p0","deps":["common:widget\/js\/util\/tangram\/tangram.js","common:widget\/js\/util\/log\/log.js"]},"home:widget\/banner\/banner.js":{"pkg":"home:p0","deps":["common:widget\/js\/util\/tangram\/tangram.js","common:widget\/js\/util\/log\/log.js"]},"home:widget\/business\/business.js":{"pkg":"home:p0","deps":["common:widget\/js\/util\/tangram\/tangram.js","common:widget\/js\/util\/log\/log.js"]},"home:widget\/discussion\/discussion.js":{"pkg":"home:p0","deps":["common:widget\/js\/util\/tangram\/tangram.js","common:widget\/js\/util\/log\/log.js"]},"home:widget\/influence\/influence.js":{"pkg":"home:p0","deps":["common:widget\/js\/util\/tangram\/tangram.js","common:widget\/js\/util\/log\/log.js"]},"home:widget\/js\/lazyload\/lazyload.js":{"pkg":"home:p0","deps":["common:widget\/js\/util\/tangram\/tangram.js"]},"home:widget\/js\/render-header\/render-header.js":{"pkg":"home:p0","deps":["common:widget\/js\/util\/tangram\/tangram.js"]},"home:widget\/partner\/dialog-alert\/dialog-alert.es.js":{"pkg":"home:p0","deps":["common:widget\/js\/util\/tangram\/tangram.js","common:widget\/js\/util\/template\/template.js","common:widget\/js\/ui\/dialog\/dialog.js"]},"home:widget\/partner\/fullpage\/jquery.fullPage.js":{"pkg":"home:p0","deps":["common:widget\/js\/util\/tangram\/tangram.js"]},"home:widget\/partner\/js\/dom-ready.es.js":{"pkg":"home:p0","deps":["common:widget\/js\/util\/tangram\/tangram.js","common:widget\/js\/util\/event\/event.js","common:widget\/js\/ui\/dialog\/dialog.js","common:widget\/js\/util\/template\/template.js","common:widget\/js\/util\/log\/log.js","home:widget\/partner\/dialog-alert\/dialog-alert.es.js","home:widget\/partner\/fullpage\/jquery.fullPage.js"]},"home:widget\/recommend\/recommend.js":{"pkg":"home:p0","deps":["common:widget\/js\/util\/tangram\/tangram.js","common:widget\/js\/util\/log\/log.js"]},"home:widget\/slogan\/slogan.js":{"pkg":"home:p0","deps":["common:widget\/js\/util\/tangram\/tangram.js","common:widget\/js\/util\/event\/event.js","common:widget\/js\/ui\/tip\/tip.js","common:widget\/js\/logic\/sign-in\/sign-in.js","common:widget\/js\/util\/log\/log.js","common:widget\/js\/logic\/signin-task\/signin-task.js"]},"common:widget\/js\/logic\/tip-template\/tipTemplate.es.js":{"pkg":"common:p5","deps":["common:widget\/lib\/jquery\/jquery.js"]},"common:widget\/js\/logic\/usergrade\/threshold.es.js":{"pkg":"common:p5"},"common:widget\/js\/logic\/usergrade\/gradedata.es.js":{"pkg":"common:p5","deps":["common:widget\/js\/logic\/usergrade\/threshold.es.js"]},"common:widget\/js\/ui\/newDialog\/newDialog.es.js":{"pkg":"common:p5","deps":["common:widget\/js\/util\/tangram\/tangram.js"]},"common:widget\/js\/ui\/v-flash\/js\/v-icon.es.js":{"pkg":"common:p5"},"common:widget\/js\/ui\/v-flash\/js\/flash.es.js":{"pkg":"common:p5","deps":["common:widget\/js\/ui\/v-flash\/js\/v-icon.es.js"]},"common:widget\/js\/util\/domToImage\/dom-to-image.es.js":{"pkg":"common:p5"},"common:widget\/js\/util\/monitor\/monitor.es.js":{"pkg":"common:p5","deps":["common:widget\/js\/util\/log\/log.js"]}},"pkg":{"common:p0":{"url":"https:\/\/iknowpc.bdimg.com\/static\/common\/pkg\/more.f3a672b.js","has":["common:widget\/bottom-ask\/bottom-ask.js","common:widget\/css\/fonts\/iconfont.js","common:widget\/css\/fonts\/iconfont.min.js","common:widget\/footer-new\/footer-new.js","common:widget\/footer\/footer.js","common:widget\/header-metis\/header.js","common:widget\/menu\/menu.js","common:widget\/search-box-new\/search-box-new.js","common:widget\/set-tag\/set-tag.js","common:widget\/task\/task-last.js","common:widget\/userbar-renew\/userbar-renew.js"]},"home:p0":{"url":"https:\/\/iknowpc.bdimg.com\/static\/home\/pkg\/module.94075e6.js","has":["home:widget\/activity\/activity.js","home:widget\/banner\/banner.js","home:widget\/business\/business.js","home:widget\/discussion\/discussion.js","home:widget\/influence\/influence.js","home:widget\/js\/lazyload\/lazyload.js","home:widget\/js\/render-header\/render-header.js","home:widget\/partner\/dialog-alert\/dialog-alert.es.js","home:widget\/partner\/fullpage\/jquery.fullPage.js","home:widget\/partner\/js\/dom-ready.es.js","home:widget\/recommend\/recommend.js","home:widget\/slogan\/slogan.js"]},"common:p5":{"url":"https:\/\/iknowpc.bdimg.com\/static\/common\/pkg\/esmod.009f40a.js","has":["common:widget\/js\/logic\/tip-template\/tipTemplate.es.js","common:widget\/js\/logic\/usergrade\/threshold.es.js","common:widget\/js\/logic\/usergrade\/gradedata.es.js","common:widget\/js\/ui\/newDialog\/newDialog.es.js","common:widget\/js\/ui\/v-flash\/js\/v-icon.es.js","common:widget\/js\/ui\/v-flash\/js\/flash.es.js","common:widget\/js\/util\/domToImage\/dom-to-image.es.js","common:widget\/js\/util\/monitor\/monitor.es.js"]}}});</script><script type="text/javascript" src="static/common/pkg/lib.33719ed.js"></script><script type="text/javascript" src="static/common/pkg/commonjs.8d85fb5.js"></script><script nonce="" type="text/javascript">
+!function(){var F = (window.__IKNOW_GLOBAL__ || window).F;var require = (window.__IKNOW_GLOBAL__ || window).require;			window['__abbaidu_2016_subidgetf'] = function () {
+                var currentUrlArray = window.location.href.split("//");
+                var start = currentUrlArray[1].indexOf("/");
+                if (start == -1) {
+                    return 'iknow-pc-home';
+				}
+                var currentPath = currentUrlArray[1].substring(start);
+                if(currentPath.indexOf("?") != -1) {
+                    currentPath = currentPath.split("?")[0];
+                }
+                if (currentPath == "/") {
+                    return 'iknow-pc-home';
+				}
+				if (currentPath.indexOf("/question") === 0) {
+					return 'iknow-pc-qb';
+				}
+				if (currentPath.indexOf("/search") === 0) {
+					return 'iknow-pc-search';
+				}
+				return 'iknow-pc-other';
+			}
+			window['__abbaidu_2016_cb'] = function (responseData) {
+                try {
+                    var respJSON = JSON.parse(responseData);
+
+                    var d = new Date();
+                    d.setTime(d.getTime()+(60*60*1000));
+                    var expires = "expires="+d.toGMTString();
+                    document.cookie = 'shitong_key_id=' + respJSON.key_id + '; ' + expires + '; path=/';
+                    document.cookie = 'shitong_data=' + respJSON.data + '; ' + expires + '; path=/';
+                    document.cookie = 'shitong_sign=' + respJSON.sign + '; ' + expires + '; path=/';
+                } catch (err) {
+                }
+   			};
+		}();
+!function(){var F = (window.__IKNOW_GLOBAL__ || window).F;var require = (window.__IKNOW_GLOBAL__ || window).require;    F.context('sfrom', '');
+    require.async(['common:widget/userbar-renew/userbar-renew']);
+}();
+!function(){var F = (window.__IKNOW_GLOBAL__ || window).F;var require = (window.__IKNOW_GLOBAL__ || window).require;    require.async(['common:widget/search-box-new/search-box-new']);
+}();
+!function(){var F = (window.__IKNOW_GLOBAL__ || window).F;var require = (window.__IKNOW_GLOBAL__ || window).require;    require.async(['common:widget/menu/menu'], function(menu){
+        menu.init();
+    });
+    // 导航menu可用时间打点
+    alog && alog('speed.set', 'c_menu', +new Date); alog.fire && alog.fire("mark");
+}();
+!function(){var F = (window.__IKNOW_GLOBAL__ || window).F;var require = (window.__IKNOW_GLOBAL__ || window).require;    F.context('signInTime',{
+        year: '2020',
+        month: '09',
+        day: '19'
+    });
+    F.context('realTimeData',{"finishCount":"583202925","onlineUserCount":"58844","onlineDoctorCount":"11819","zhimaCount":"12701322","partnerCount":"76792","teamCount":"11511","uadminCount":"8080","mavinCount":"23820"});
+
+	require.async(['home:widget/slogan/slogan'],function(slogan){
+		slogan.init();
+	});
+}();
+!function(){var F = (window.__IKNOW_GLOBAL__ || window).F;var require = (window.__IKNOW_GLOBAL__ || window).require;	require.async(['home:widget/banner/banner'],function(banner){
+		banner.init();
+	});
+}();
+!function(){var F = (window.__IKNOW_GLOBAL__ || window).F;var require = (window.__IKNOW_GLOBAL__ || window).require;	require.async(['home:widget/discussion/discussion'],function(discussion){
+		discussion.init();
+	});
+}();
+!function(){var F = (window.__IKNOW_GLOBAL__ || window).F;var require = (window.__IKNOW_GLOBAL__ || window).require;	require.async(['home:widget/recommend/recommend'],function(recommend){
+		recommend.init();
+	});
+}();
+!function(){var F = (window.__IKNOW_GLOBAL__ || window).F;var require = (window.__IKNOW_GLOBAL__ || window).require;	require.async(['home:widget/influence/influence'],function(influence){
+		influence.init();
+	});
+}();
+!function(){var F = (window.__IKNOW_GLOBAL__ || window).F;var require = (window.__IKNOW_GLOBAL__ || window).require;	require.async(['home:widget/activity/activity'],function(activity){
+		activity.init();
+	});
+}();
+!function(){var F = (window.__IKNOW_GLOBAL__ || window).F;var require = (window.__IKNOW_GLOBAL__ || window).require;	require.async(['home:widget/business/business'],function(business){
+		business.init();
+	});
+}();
+!function(){var F = (window.__IKNOW_GLOBAL__ || window).F;var require = (window.__IKNOW_GLOBAL__ || window).require;require.async(['common:widget/task/task-last'], function(taskList){
+    taskList.init();
+});
+
+}();
+!function(){var F = (window.__IKNOW_GLOBAL__ || window).F;var require = (window.__IKNOW_GLOBAL__ || window).require;    require('common:widget/js/logic/ie-prompt/ie-prompt');
+    require.async(['common:widget/footer-new/footer-new'], function(footer) {
+        footer.init();
+    });
+}();
+!function(){var F = (window.__IKNOW_GLOBAL__ || window).F;var require = (window.__IKNOW_GLOBAL__ || window).require;        require.async(['common:widget/lib/jquery/jquery','common:widget/js/util/log/log','home:widget/js/render-header/render-header'], function($, log, renderHeader) {
+            $(function() {
+                // 打点首页用户可操作时间
+                alog('speed.set', 'drt', +new Date);
+
+                log.init({key:2058, query:'body', action:'click'});
+
+                // pv统计
+                log.send({
+                    module: 'home',
+                    page: 'index',
+                    area: 'whole',
+                    action: 'pv',
+                    type: 2058
+                });
+                renderHeader.init();
+            });
+        });
+     }();
+!function(){var F = (window.__IKNOW_GLOBAL__ || window).F;var require = (window.__IKNOW_GLOBAL__ || window).require;								                																	require.async(['common:widget/js/logic/dom-ready/dom-ready'], function(D){ D.init({"isNotPgc":"1"}) });
+            }();
+!function(){var F = (window.__IKNOW_GLOBAL__ || window).F;var require = (window.__IKNOW_GLOBAL__ || window).require;        require.async(["common:widget/js/logic/duration/duration"],function(dur){
+            dur.init();
+        });
+    }();
+!function(){var F = (window.__IKNOW_GLOBAL__ || window).F;var require = (window.__IKNOW_GLOBAL__ || window).require;			require.async(['common:widget/js/util/monitor/monitor.es'], function(m) {
+				m.monitor && m.monitor.init();
+			});
+		}();
+</script>
+<script type="text/javascript">
+    require.async(['common:widget/lib/jquery/jquery'], function ($) {
+        if (!/chrome|firefox|safari|msie 10|rsv:11|msie [89]/i.test(navigator.userAgent)) {
+            return;
+        }
+
+        window.BaiduHttps = window.BaiduHttps || {};
+        window.BaiduHttps.callbacks = function (data) {
+            if (data && data.s === 0) {
+                window.supportHttps = 1;
+                setTimeout(function () {
+                    $('a[href^="http://www.baidu.com/s?"]').each(function (index, item) {
+                        var link = $(item).attr('href');
+                        if (~link.indexOf('?wd=') || ~link.indexOf('&wd=')) {
+                            link = link.replace(/^http/, 'https');
+                            $(item).attr('href', link);
+                        }
+                    });
+                }, 2000);
+            }
+        };
+
+        var script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.src = 'https://www.baidu.com/con?from=zhidao';
+        document.body.appendChild(script);
+    });
+</script>
+
+
+<script async="" src="heicha/mw/abclite-2016-s.js"></script>
+
+
+</html>

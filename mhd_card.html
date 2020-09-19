@@ -1,0 +1,2200 @@
+<!DOCTYPE html>
+<html>
+        <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+        
+        
+        <title>百度搜索风云榜</title>
+        
+    <meta name="keywords" content="百度搜索风云榜，风云榜，搜索风云榜，搜索排行榜，排行榜，热搜榜，热词榜，热门话题，网络热点，实时热点，热门事件，网络新词，热点，排行，百度搜索排行榜，百度，2013年流行语">
+    <meta name="description" content="百度搜索风云榜以数亿网民的搜索行为作为数据基础，建立权威的关键词排行榜与分类热点门户。实时更新网络热点，为您一站式解读最新最热的人事物信息，引领热词阅读时代！">
+
+	
+    <style>
+        .icon-xiang-imp {background:url(frontend/static/common/images/xiang.png) center center no-repeat !important;}
+    </style>
+    <script>
+                                                var href_ps_tn = 'SE_baiduhomet8_jmjb7mjw';
+        var href_ps_prep = 'http://www.baidu.com/baidu?cl=3&tn=SE_baiduhomet8_jmjb7mjw&rsv_dl=fyb_top&fr=top1000&wd=';
+                                    var boardIdsLikeYeYou = ',173,1393,1394,';
+        function checkLikeYeYou(boardId) {
+            if (boardId && boardIdsLikeYeYou.indexOf(',' + boardId + ',') >= 0) {
+                return 1;
+            } else {
+                return 0;
+            }
+        }
+
+        
+        var baidu;
+    </script>
+						<script>var BASE_URL = "http://top.baidu.com/", BASEURL = "https://top.bdimg.com/frontend", FLASH_URL= "http://top.baidu.com/frontend";</script>
+                        <link rel="stylesheet" href="frontend/static/common/common.min.css">
+            <script type="text/javascript" src="frontend/build/common/lib-150709.js"></script>
+            	<script>var bt = baidu.template;</script>
+	    
+    		<link rel="stylesheet" href="frontend/static/index/index.min-150709.css">
+	    
+            </head>
+    <body>
+		 <div class="wrapper">
+            	        <div class="header">
+    <div class="lg">
+        <a href="javascript:;"><img width="100%" src="frontend/img/logo@2x.png" alt="搜索风云榜" title="搜索风云榜"></a>
+    </div>
+    <div id="ba_sc">
+        <p id="ba_nv"> <a target="_blank" name="tj_news" href="index2.html">新闻</a>　<a target="_blank" name="tj_ps" href="javascript:;">网页</a>　<strong class="bold">风云榜</strong>　<a target="_blank" name="tj_tieba" href="index4.html">贴吧</a>　 <a target="_blank" name="tj_zhidao" href="javascript:;">知道</a>　 <a target="_blank" name="tj_music" href="javascript:;">音乐</a>　 <a target="_blank" name="tj_img" href="index9.html">图片</a>　 <a target="_blank" name="tj_video" href="javascript:;">视频</a>　 <a target="_blank" name="tj_map" href="index3.html">地图</a>　 <a target="_blank" name="tj_index" href="javascript:;">指数</a> </p>
+        <form id="ba_fm" action="http://www.baidu.com/s" name="f" target="_blank">
+            <input name="tn" value="SE_baiduhomet8_jmjb7mjw" type="hidden">
+            <span class="s_ipt_wr">
+                <input value="" data-default="国务院机构改革" maxlength="100" class="s_ipt" name="wd" id="sword">
+            </span>
+            <span class="s_btn_wr">
+                <input type="submit" id="ba_baidu" class="s_btn" onmousedown="this.className='s_btn s_btn_h'" onmouseout="this.className='s_btn'" value="百度一下">
+            </span>
+        </form>
+    </div>
+    <p class="ba_hp">
+        <a href="javascript:;" id="ba_link_help">帮助</a> | <a id="feedback_bd" href="javascript:;">反馈</a>
+    </p>
+    
+</div>
+
+            <div id="nav" class="nav"><ul id="main-nav"><li class="current"> <a href="javascript:;">首页<span>&nbsp;</span></a> </li><li> <a href="javascript:;">风云时讯</a> </li><li><a href="javascript:;">娱乐</a><ul class="sub-nav"><li><a href="javascript:;">电影</a></li><li><a href="javascript:;">电视剧</a></li><li><a href="javascript:;">综艺</a></li><li><a href="javascript:;">动漫</a></li><li><a href="javascript:;">少儿</a></li><li><a href="javascript:;">纪录片</a></li></ul></li><li><a href="javascript:;">小说</a><ul class="sub-nav"><li><a href="javascript:;">全部</a></li><li><a href="javascript:;">玄幻奇幻</a></li><li><a href="javascript:;">都市言情</a></li><li><a href="javascript:;">武侠仙侠</a></li><li><a href="javascript:;">青春校园</a></li><li><a href="javascript:;">穿越架空</a></li><li><a href="javascript:;">惊悚悬疑</a></li><li><a href="javascript:;">历史军事</a></li><li><a href="javascript:;">游戏竞技</a></li><li><a href="javascript:;">耽美同人</a></li><li><a href="javascript:;">文学经典</a></li></ul></li><li><a href="javascript:;">游戏</a><ul class="sub-nav"><li><a href="javascript:;">网页游戏</a></li><li><a href="javascript:;">网络游戏</a></li><li><a href="javascript:;">手机游戏</a></li><li><a href="javascript:;">单机游戏</a></li></ul></li><li><a href="javascript:;">人物</a><ul class="sub-nav"><li><a href="javascript:;">热点人物</a></li><li><a href="javascript:;">名家人物</a></li><li><a href="javascript:;">公益人物</a></li><li><a href="javascript:;">财经人物</a></li><li><a href="javascript:;">体坛人物</a></li><li><a href="javascript:;">主持人</a></li><li><a href="javascript:;">历史人物</a></li><li><a href="javascript:;">互联网人</a></li><li><a href="javascript:;">女明星</a></li><li><a href="javascript:;">男明星</a></li><li><a href="javascript:;">欧美明星</a></li></ul></li><li><a href="javascript:;">汽车</a><ul class="sub-nav"><li><a href="javascript:;">热搜汽车</a></li><li><a href="javascript:;">电动汽车</a></li><li><a href="javascript:;">微型车</a></li><li><a href="javascript:;">小型车</a></li><li><a href="javascript:;">紧凑车型</a></li><li><a href="javascript:;">中级车</a></li><li><a href="javascript:;">中高级车</a></li><li><a href="javascript:;">豪华车</a></li><li><a href="javascript:;">SUV</a></li><li><a href="javascript:;">MPV</a></li><li><a href="javascript:;">汽车月度</a></li></ul></li><li><a href="javascript:;">热点</a><ul class="sub-nav"><li><a href="javascript:;">实时热点</a></li><li><a href="javascript:;">今日热点</a></li><li><a href="javascript:;">七日热点</a></li></ul></li><li> <a href="javascript:;">全部榜单</a> </li><li> <a href="javascript:;">地域风向标</a> </li><li class="last"> <a href="javascript:;">人群风向标</a> </li></ul></div>
+
+            
+        <div class="banner"></div>
+        <div id="main" class="main">
+        <div class="row">
+            <div class="box-hot tab">
+    <div class="tab-hd tab-skin-hot">
+        <ul>
+            <li class="current"><span class="realtime">&nbsp;</span>实时热点</li>
+            <li><span class="weekspot">&nbsp;</span>七日关注</li>
+        </ul>
+    </div>
+    <div class="list-tt">
+        <span class="tt-index">排名</span>
+        <span class="tt-title">关键词</span>
+        <span class="tt-value">搜索指数</span>
+    </div>
+    <div class="tab-bd">
+        <div class="tab-box">
+                                                    <ul id="hot-list" class="list">
+                                        
+                    <li>
+                                                    <span class="num-top">1</span>
+                                                                                                                                                                                                    <a target="_blank" title="21世纪仅4次中秋国庆同一天" data="1|1" class="list-title" href="javascript:;" href_top="./detail?b=1&w=21%CA%C0%BC%CD%BD%F64%B4%CE%D6%D0%C7%EF%B9%FA%C7%EC%CD%AC%D2%BB%CC%EC">21世纪仅4次中秋国..</a>
+                                                <span class="icon-fall">4575761</span>
+                        <a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+                        
+                    </li>
+                                        
+                    <li>
+                                                    <span class="num-top">2</span>
+                                                                                                                                                                                                    <a target="_blank" title="嫦娥五号年底前发射" data="1|1" class="list-title" href="javascript:;" href_top="./detail?b=1&w=%E6%CF%B6%F0%CE%E5%BA%C5%C4%EA%B5%D7%C7%B0%B7%A2%C9%E4">嫦娥五号年底前发射</a>
+                                                <span class="icon-fall">4415609</span>
+                        <a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+                        
+                    </li>
+                                        
+                    <li>
+                                                    <span class="num-top">3</span>
+                                                                                                                                                                                                    <a target="_blank" title="蔡徐坤喇叭裤" data="1|1" class="list-title" href="javascript:;" href_top="./detail?b=1&w=%B2%CC%D0%EC%C0%A4%C0%AE%B0%C8%BF%E3">蔡徐坤喇叭裤</a>
+                                                <span class="icon-fall">4261063</span>
+                        <a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+                        
+                    </li>
+                                        
+                    <li>
+                                                    <span class="num-normal">4</span>
+                                                                                                                                                                                                    <a target="_blank" title="张靓颖荆棘头饰" data="1|1" class="list-title" href="javascript:;" href_top="./detail?b=1&w=%D5%C5%F6%A6%D3%B1%BE%A3%BC%AC%CD%B7%CA%CE">张靓颖荆棘头饰</a>
+                                                <span class="icon-fall">4111925</span>
+                        <a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+                        
+                    </li>
+                                        
+                    <li>
+                                                    <span class="num-normal">5</span>
+                                                                                                                                                                                                    <a target="_blank" title="印度新冠治愈病例成世界第一" data="1|1" class="list-title" href="javascript:;" href_top="./detail?b=1&w=%D3%A1%B6%C8%D0%C2%B9%DA%D6%CE%D3%FA%B2%A1%C0%FD%B3%C9%CA%C0%BD%E7%B5%DA%D2%BB">印度新冠治愈病例成世..</a>
+                                                <span class="icon-fall">3968008</span>
+                        <a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+                        
+                    </li>
+                                        
+                    <li>
+                                                    <span class="num-normal">6</span>
+                                                                                                                                                                                                    <a target="_blank" title="许佳琪湿发金边眼镜造型" data="1|1" class="list-title" href="javascript:;" href_top="./detail?b=1&w=%D0%ED%BC%D1%E7%F7%CA%AA%B7%A2%BD%F0%B1%DF%D1%DB%BE%B5%D4%EC%D0%CD">许佳琪湿发金边眼镜造..</a>
+                                                <span class="icon-fall">3829128</span>
+                        <a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+                        
+                    </li>
+                                        
+                    <li>
+                                                    <span class="num-normal">7</span>
+                                                                                                                                                                                                    <a target="_blank" title="邓紫棋Fly Away 好稳" data="1|1" class="list-title" href="javascript:;" href_top="./detail?b=1&w=%B5%CB%D7%CF%C6%E5Fly%20Away%20%BA%C3%CE%C8">邓紫棋Fly Awa..</a>
+                        <span class="icon icon-new"></span>                        <span class="icon-fall">3695108</span>
+                        <a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+                        
+                    </li>
+                                        
+                    <li>
+                                                    <span class="num-normal">8</span>
+                                                                                                                                                                                                    <a target="_blank" title="腾格尔草原味last dance" data="1|1" class="list-title" href="javascript:;" href_top="./detail?b=1&w=%CC%DA%B8%F1%B6%FB%B2%DD%D4%AD%CE%B6last%20dance">腾格尔草原味last..</a>
+                                                <span class="icon-fall">3565779</span>
+                        <a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+                        
+                    </li>
+                                        
+                    <li>
+                                                    <span class="num-normal">9</span>
+                                                                                                                                                                                                    <a target="_blank" title="The9一键换装舞台" data="1|1" class="list-title" href="javascript:;" href_top="./detail?b=1&w=The9%D2%BB%BC%FC%BB%BB%D7%B0%CE%E8%CC%A8">The9一键换装舞台</a>
+                                                <span class="icon-fall">3440977</span>
+                        <a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+                        
+                    </li>
+                                        
+                    <li>
+                                                    <span class="num-normal">10</span>
+                                                                                                                                                                                                    <a target="_blank" title="气运联盟衣服好绿" data="1|1" class="list-title" href="javascript:;" href_top="./detail?b=1&w=%C6%F8%D4%CB%C1%AA%C3%CB%D2%C2%B7%FE%BA%C3%C2%CC">气运联盟衣服好绿</a>
+                        <span class="icon icon-new"></span>                        <span class="icon-fall">3320543</span>
+                        <a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+                        
+                    </li>
+                                </ul>
+                <div id="item-news" style="display:none;">
+                    <div id="item-news-list"></div>
+                    <span class="item-line">&nbsp;</span>
+                </div>
+                <a href="javascript:;" class="whole">完整榜单</a>
+                    </div>
+        <div class="tab-box" style="display:none">
+                                                     <ul class="list">
+                                        
+                    <li>
+                                                    <span class="num-top">1</span>
+                                                                                                                                                                                                    <a target="_blank" title="武汉通报抗疫护士夫妇看演出身亡" data="42|42" class="list-title" href="javascript:;" href_top="./detail?b=42&w=%CE%E4%BA%BA%CD%A8%B1%A8%BF%B9%D2%DF%BB%A4%CA%BF%B7%F2%B8%BE%BF%B4%D1%DD%B3%F6%C9%ED%CD%F6">武汉通报抗疫护士夫妇..</a>
+                        <span class="icon icon-new"></span>                        <span class="icon-rise">706715</span>
+                        <a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+                    </li>
+                                        
+                    <li>
+                                                    <span class="num-top">2</span>
+                                                                                                                                                                                                    <a target="_blank" title="抗疫护士夫妇剧场身亡 企业回应" data="42|42" class="list-title" href="javascript:;" href_top="./detail?b=42&w=%BF%B9%D2%DF%BB%A4%CA%BF%B7%F2%B8%BE%BE%E7%B3%A1%C9%ED%CD%F6%20%C6%F3%D2%B5%BB%D8%D3%A6">抗疫护士夫妇剧场身亡..</a>
+                        <span class="icon icon-new"></span>                        <span class="icon-rise">457999</span>
+                        <a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+                    </li>
+                                        
+                    <li>
+                                                    <span class="num-top">3</span>
+                                                                                                                                                                                                    <a target="_blank" title="大连海关私放法院查封的36辆凌志" data="42|42" class="list-title" href="javascript:;" href_top="./detail?b=42&w=%B4%F3%C1%AC%BA%A3%B9%D8%CB%BD%B7%C5%B7%A8%D4%BA%B2%E9%B7%E2%B5%C436%C1%BE%C1%E8%D6%BE">大连海关私放法院查封..</a>
+                                                <span class="icon-fair">445580</span>
+                        <a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+                    </li>
+                                        
+                    <li>
+                                                    <span class="num-normal">4</span>
+                                                                                                                                                                                                    <a target="_blank" title="河南出土青铜壶内不明液体被查明" data="42|42" class="list-title" href="javascript:;" href_top="./detail?b=42&w=%BA%D3%C4%CF%B3%F6%CD%C1%C7%E0%CD%AD%BA%F8%C4%DA%B2%BB%C3%F7%D2%BA%CC%E5%B1%BB%B2%E9%C3%F7">河南出土青铜壶内不明..</a>
+                        <span class="icon icon-new"></span>                        <span class="icon-rise">437960</span>
+                        <a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+                    </li>
+                                        
+                    <li>
+                                                    <span class="num-normal">5</span>
+                                                                                                                                                                                                    <a target="_blank" title="全球新冠日新增确诊创纪录" data="42|42" class="list-title" href="javascript:;" href_top="./detail?b=42&w=%C8%AB%C7%F2%D0%C2%B9%DA%C8%D5%D0%C2%D4%F6%C8%B7%D5%EF%B4%B4%BC%CD%C2%BC">全球新冠日新增确诊创..</a>
+                                                <span class="icon-fair">433037</span>
+                        <a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+                    </li>
+                                        
+                    <li>
+                                                    <span class="num-normal">6</span>
+                                                                                                                                                                                                    <a target="_blank" title="大数据杀熟行为10月1日起明令禁止" data="42|42" class="list-title" href="javascript:;" href_top="./detail?b=42&w=%B4%F3%CA%FD%BE%DD%C9%B1%CA%EC%D0%D0%CE%AA10%D4%C21%C8%D5%C6%F0%C3%F7%C1%EE%BD%FB%D6%B9">大数据杀熟行为10月..</a>
+                                                <span class="icon-rise">426471</span>
+                        <a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+                    </li>
+                                        
+                    <li>
+                                                    <span class="num-normal">7</span>
+                                                                                                                                                                                                    <a target="_blank" title="胡锡进:中印冲突有中国官兵牺牲" data="42|42" class="list-title" href="javascript:;" href_top="./detail?b=42&w=%BA%FA%CE%FD%BD%F8%3A%D6%D0%D3%A1%B3%E5%CD%BB%D3%D0%D6%D0%B9%FA%B9%D9%B1%F8%CE%FE%C9%FC">胡锡进:中印冲突有中..</a>
+                        <span class="icon icon-new"></span>                        <span class="icon-rise">413751</span>
+                        <a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+                    </li>
+                                        
+                    <li>
+                                                    <span class="num-normal">8</span>
+                                                                                                                                                                                                    <a target="_blank" title="两孙女被奶奶推拉进粪坑溺亡" data="42|42" class="list-title" href="javascript:;" href_top="./detail?b=42&w=%C1%BD%CB%EF%C5%AE%B1%BB%C4%CC%C4%CC%CD%C6%C0%AD%BD%F8%B7%E0%BF%D3%C4%E7%CD%F6">两孙女被奶奶推拉进粪..</a>
+                                                <span class="icon-fair">412563</span>
+                        <a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+                    </li>
+                                        
+                    <li>
+                                                    <span class="num-normal">9</span>
+                                                                                                                                                                                                    <a target="_blank" title="全国首例同性伴侣争抚养权案宣判" data="42|42" class="list-title" href="javascript:;" href_top="./detail?b=42&w=%C8%AB%B9%FA%CA%D7%C0%FD%CD%AC%D0%D4%B0%E9%C2%C2%D5%F9%B8%A7%D1%F8%C8%A8%B0%B8%D0%FB%C5%D0">全国首例同性伴侣争抚..</a>
+                                                <span class="icon-fair">407904</span>
+                        <a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+                    </li>
+                                        
+                    <li>
+                                                    <span class="num-normal">10</span>
+                                                                                                                                                                                                    <a target="_blank" title="7岁时称高考要考720分今年兑现" data="42|42" class="list-title" href="javascript:;" href_top="./detail?b=42&w=7%CB%EA%CA%B1%B3%C6%B8%DF%BF%BC%D2%AA%BF%BC720%B7%D6%BD%F1%C4%EA%B6%D2%CF%D6">7岁时称高考要考72..</a>
+                                                <span class="icon-rise">394392</span>
+                        <a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+                    </li>
+                                 </ul>
+                <a href="javascript:;" class="whole">完整榜单</a>
+                    </div>
+    </div>
+</div>
+            <div id="box-today" class="box-today">
+    <h2 class="title">今日上榜</h2>
+    <!-- colspan rowspan -->
+    <div id="flip-list">
+                            
+                        <div class="flip-list flip-tpl-1 active">
+                  
+                    <div class="flip block-1 ">
+                                                                                    <div class="word">
+                                    <a target="_blank" href="javascript:;" href_top="./detail?b=1&w=阿里第一颗芯片">
+                                        阿里第一颗芯片
+                                    </a>
+                                </div>
+                                                        <a class="board" title="实时热点" target="_blank" href="javascript:;">实时热点</a>
+                        
+                                            </div>
+                  
+                    <div class="flip block-2 ">
+                                                                                    <div class="word">
+                                    <a target="_blank" href="javascript:;" href_top="./detail?b=1&w=退役军人专属套餐">
+                                        退役军人专属套餐
+                                    </a>
+                                </div>
+                                                        <a class="board" title="实时热点" target="_blank" href="javascript:;">实时热点</a>
+                        
+                                            </div>
+                  
+                    <div class="flip block-3 ">
+                                                                                    <div class="word">
+                                    <a target="_blank" href="javascript:;" href_top="./detail?b=1&w=小米5G新品发布会">
+                                        小米5G新品发布会
+                                    </a>
+                                </div>
+                                                        <a class="board" title="实时热点" target="_blank" href="javascript:;">实时热点</a>
+                        
+                                            </div>
+                  
+                    <div class="flip block-4 ">
+                                                                                    <div class="word">
+                                    <a target="_blank" href="javascript:;" href_top="./detail?b=1&w=华为Mate30发布会">
+                                        华为Mate30发布会
+                                    </a>
+                                </div>
+                                                        <a class="board" title="实时热点" target="_blank" href="javascript:;">实时热点</a>
+                        
+                                            </div>
+                  
+                    <div class="flip block-5 ">
+                                                                                    <div class="word">
+                                    <a target="_blank" href="javascript:;" href_top="./detail?b=1&w=阳澄湖大闸蟹开捕">
+                                        阳澄湖大闸蟹开捕
+                                    </a>
+                                </div>
+                                                        <a class="board" title="实时热点" target="_blank" href="javascript:;">实时热点</a>
+                        
+                                            </div>
+                  
+                    <div class="flip block-6 ">
+                                                                                    <div class="word">
+                                    <a target="_blank" href="javascript:;" href_top="./detail?b=1&w=小米环绕屏手机">
+                                        小米环绕屏手机
+                                    </a>
+                                </div>
+                                                        <a class="board" title="实时热点" target="_blank" href="javascript:;">实时热点</a>
+                        
+                                            </div>
+                  
+                    <div class="flip block-7 ">
+                                                                                    <div class="word">
+                                    <a target="_blank" href="javascript:;" href_top="./detail?b=1&w=中国世界经济坐标">
+                                        中国世界经济坐标
+                                    </a>
+                                </div>
+                                                        <a class="board" title="实时热点" target="_blank" href="javascript:;">实时热点</a>
+                        
+                                            </div>
+                            </div>
+                                
+                        <div class="flip-list flip-tpl-1 ">
+                  
+                    <div class="flip block-1 ">
+                                                                                    <div class="word">
+                                    <a target="_blank" href="javascript:;" href_top="./detail?b=1&w=SM将与漫威合作">
+                                        SM将与漫威合作
+                                    </a>
+                                </div>
+                                                        <a class="board" title="实时热点" target="_blank" href="javascript:;">实时热点</a>
+                        
+                                            </div>
+                  
+                    <div class="flip block-2 ">
+                                                                                    <div class="word">
+                                    <a target="_blank" href="javascript:;" href_top="./detail?b=1&w=孟晚舟朋友圈发声">
+                                        孟晚舟朋友圈发声
+                                    </a>
+                                </div>
+                                                        <a class="board" title="实时热点" target="_blank" href="javascript:;">实时热点</a>
+                        
+                                            </div>
+                  
+                    <div class="flip block-3 ">
+                                                                                    <div class="word">
+                                    <a target="_blank" href="">
+                                        哪吒密钥延期
+                                    </a>
+                                </div>
+                                                                                
+                                            </div>
+                  
+                    <div class="flip block-4 ">
+                                                                                    <div class="word">
+                                    <a target="_blank" href="javascript:;" href_top="./detail?b=1&w=齐商银行11张罚单">
+                                        齐商银行11张罚单
+                                    </a>
+                                </div>
+                                                        <a class="board" title="实时热点" target="_blank" href="javascript:;">实时热点</a>
+                        
+                                            </div>
+                  
+                    <div class="flip block-5 ">
+                                                                                    <div class="word">
+                                    <a target="_blank" href="javascript:;" href_top="./detail?b=1&w=养老金发放有保证">
+                                        养老金发放有保证
+                                    </a>
+                                </div>
+                                                        <a class="board" title="实时热点" target="_blank" href="javascript:;">实时热点</a>
+                        
+                                            </div>
+                  
+                    <div class="flip block-6 ">
+                                                                                    <div class="word">
+                                    <a target="_blank" href="javascript:;" href_top="./detail?b=1&w=嘉行辟谣解约传闻">
+                                        嘉行辟谣解约传闻
+                                    </a>
+                                </div>
+                                                        <a class="board" title="实时热点" target="_blank" href="javascript:;">实时热点</a>
+                        
+                                            </div>
+                  
+                    <div class="flip block-7 ">
+                                                                                    <div class="word">
+                                    <a target="_blank" href="javascript:;" href_top="./detail?b=1&w=美国电子烟巨头Juul CEO辞职">
+                                        美国电子烟巨头Juul CEO辞职
+                                    </a>
+                                </div>
+                                                        <a class="board" title="实时热点" target="_blank" href="javascript:;">实时热点</a>
+                        
+                                            </div>
+                            </div>
+                                
+                        <div class="flip-list flip-tpl-1 ">
+                  
+                    <div class="flip block-1 ">
+                                                                                    <div class="word">
+                                    <a target="_blank" href="javascript:;" href_top="./detail?b=1&w=成都打造夜间经济">
+                                        成都打造夜间经济
+                                    </a>
+                                </div>
+                                                        <a class="board" title="实时热点" target="_blank" href="javascript:;">实时热点</a>
+                        
+                                            </div>
+                  
+                    <div class="flip block-2 ">
+                                                                                    <div class="word">
+                                    <a target="_blank" href="javascript:;" href_top="./detail?b=1&w=一起乐队吧道歉">
+                                        一起乐队吧道歉
+                                    </a>
+                                </div>
+                                                        <a class="board" title="实时热点" target="_blank" href="javascript:;">实时热点</a>
+                        
+                                            </div>
+                  
+                    <div class="flip block-3 ">
+                                                                                    <div class="word">
+                                    <a target="_blank" href="javascript:;" href_top="./detail?b=1&w=金鸡奖初选名单">
+                                        金鸡奖初选名单
+                                    </a>
+                                </div>
+                                                        <a class="board" title="实时热点" target="_blank" href="javascript:;">实时热点</a>
+                        
+                                            </div>
+                  
+                    <div class="flip block-4 ">
+                                                                                    <div class="word">
+                                    <a target="_blank" href="javascript:;" href_top="./detail?b=1&w=70年教育变革">
+                                        70年教育变革
+                                    </a>
+                                </div>
+                                                        <a class="board" title="实时热点" target="_blank" href="javascript:;">实时热点</a>
+                        
+                                            </div>
+                  
+                    <div class="flip block-5 ">
+                                                                                    <div class="word">
+                                    <a target="_blank" href="javascript:;" href_top="./detail?b=1&w=赵丽颖有翡造型">
+                                        赵丽颖有翡造型
+                                    </a>
+                                </div>
+                                                        <a class="board" title="实时热点" target="_blank" href="javascript:;">实时热点</a>
+                        
+                                            </div>
+                  
+                    <div class="flip block-6 ">
+                                                                                    <div class="word">
+                                    <a target="_blank" href="javascript:;" href_top="./detail?b=1&w=王俊凯方否认诈捐">
+                                        王俊凯方否认诈捐
+                                    </a>
+                                </div>
+                                                        <a class="board" title="实时热点" target="_blank" href="javascript:;">实时热点</a>
+                        
+                                            </div>
+                  
+                    <div class="flip block-7 ">
+                                                                                    <div class="word">
+                                    <a target="_blank" href="javascript:;" href_top="./detail?b=1&w=中国女排八连胜">
+                                        中国女排八连胜
+                                    </a>
+                                </div>
+                                                        <a class="board" title="实时热点" target="_blank" href="javascript:;">实时热点</a>
+                        
+                                            </div>
+                            </div>
+                                    
+    </div>
+    <div id="flip-page">
+                    
+            <a class="active" href="javascript:void(0)">1</a>
+                    
+            <a href="javascript:void(0)">2</a>
+                    
+            <a href="javascript:void(0)">3</a>
+            </div>
+</div>
+            
+
+
+<div class="box-list">
+	<ul>
+                 
+		        <li class="even">
+                     
+            <a class="more" href="javascript:;">更多</a>
+        <strong><a href="javascript:;">
+    
+            <span class="icon movie">&nbsp;</span>电影</a></strong>
+                                                                     
+            <a href="javascript:;">爱情</a>
+    
+                                                                     
+            <a href="javascript:;">喜剧</a>
+    
+                                                                     
+            <a href="javascript:;">惊悚</a>
+    
+                                                                     
+            <a href="javascript:;">科幻</a>
+    
+                                                       </li>
+                
+		        <li>
+                     
+            <a class="more" href="javascript:;">更多</a>
+        <strong><a href="javascript:;">
+    
+            <span class="icon tv">&nbsp;</span>电视剧</a></strong>
+                                                                     
+            <a href="javascript:;">偶像</a>
+    
+                                                                     
+            <a href="javascript:;">言情</a>
+    
+                                                                     
+            <a href="javascript:;">古装</a>
+    
+                                                                     
+            <a href="javascript:;">家庭</a>
+    
+                                                       </li>
+                
+		        <li class="even">
+                     
+            <a class="more" href="javascript:;">更多</a>
+        <strong><a href="javascript:;">
+    
+            <span class="icon zongyi">&nbsp;</span>综艺</a></strong>
+                                                                     
+            <a href="javascript:;">情感</a>
+    
+                                                                     
+            <a href="javascript:;">选秀</a>
+    
+                                                                     
+            <a href="javascript:;">访谈</a>
+    
+                                                                     
+            <a href="javascript:;">内地</a>
+    
+                                                       </li>
+                
+		        <li>
+                     
+            <a class="more" href="javascript:;">更多</a>
+        <strong><a href="javascript:;">
+    
+            <span class="icon dongman">&nbsp;</span>动漫</a></strong>
+                                                                     
+            <a href="javascript:;">搞笑</a>
+    
+                                                                     
+            <a href="javascript:;">冒险</a>
+    
+                                                                     
+            <a href="javascript:;">情感</a>
+    
+                                                                     
+            <a href="javascript:;">国产</a>
+    
+                                                       </li>
+                
+		        <li class="even">
+                     
+            <a class="more" href="javascript:;">更多</a>
+        <strong><a href="javascript:;">
+    
+            <span class="icon novel">&nbsp;</span>小说</a></strong>
+                                                                     
+            <a href="javascript:;">玄幻</a>
+    
+                                                                     
+            <a href="javascript:;">言情</a>
+    
+                                                                     
+            <a href="javascript:;">武侠</a>
+    
+                                                                     
+            <a href="javascript:;">青春</a>
+    
+                                                       </li>
+                
+		        <li>
+                     
+            <a class="more" href="javascript:;">更多</a>
+        <strong><a href="javascript:;">
+    
+            <span class="icon game">&nbsp;</span>游戏</a></strong>
+                                                                     
+            <a href="javascript:;">网页</a>
+    
+                                                                     
+            <a href="javascript:;">网络</a>
+    
+                                                                     
+            <a href="javascript:;">手游</a>
+    
+                                                                     
+            <a href="javascript:;">单机游戏</a>
+    
+                   </li>
+                
+		        <li class="even">
+                     
+            <a class="more" href="javascript:;">更多</a>
+        <strong><a href="javascript:;">
+    
+            <span class="icon renwu">&nbsp;</span>人物</a></strong>
+                                                                     
+            <a href="javascript:;">热点</a>
+    
+                                                                     
+            <a href="javascript:;">名家</a>
+    
+                                                                     
+            <a href="javascript:;">公益</a>
+    
+                                                                     
+            <a href="javascript:;">财经</a>
+    
+                                                       </li>
+                
+		        <li>
+                     
+            <a class="more" href="javascript:;">更多</a>
+        <strong><a href="javascript:;">
+    
+            <span class="icon automobile">&nbsp;</span>汽车</a></strong>
+                                                                     
+            <a href="javascript:;">微型车</a>
+    
+                                                                     
+            <a href="javascript:;">小型车</a>
+    
+                                                                     
+            <a href="javascript:;">紧凑型</a>
+    
+                                                                     
+            <a href="javascript:;">中级车</a>
+    
+                   </li>
+                
+		        <li class="even">
+                     
+            <a class="more" href="javascript:;">更多</a>
+        <strong><a href="javascript:;">
+    
+            <span class="icon shenghuo">&nbsp;</span>生活</a></strong>
+                                                                     
+            <a href="javascript:;">旅游城市</a>
+    
+                                                                     
+            <a href="javascript:;">博物馆</a>
+    
+                                                                     
+            <a href="javascript:;">宠物</a>
+    
+                                                                     
+            <a href="javascript:;">小吃</a>
+    
+                                                       </li>
+                
+		        <li>
+                     
+            <a class="more" href="javascript:;">更多</a>
+        <strong><a href="javascript:;">
+    
+            <span class="icon science">&nbsp;</span>科技</a></strong>
+                                                                     
+            <a href="javascript:;">手机</a>
+    
+                                                                     
+            <a href="javascript:;">软件</a>
+    
+                   </li>
+                   </ul>
+    <a class="whole" href="javascript:;">全部榜单</a>
+</div>
+        </div>
+                <div class="row">
+            <div id="box-xdt" class="box-xdt"></div>
+            <div class="box-pic"><a href='javascript:;'><img src="frontend/static/index/pic.png" alt=''></a></div>
+        </div>
+                        	
+		<div class="row"></div>        
+
+        <div id="box-cont">
+                                                                        
+
+<div class="box-cont">
+    <div class="hd">
+        <h2 class="title"><span class="icon movie">&nbsp;</span><a href="javascript:;">娱乐</a></h2>
+        <a class="more" href="javascript:;">更多 &gt;</a>
+    </div>
+    <div class="bd">
+        <div class="tab">
+              
+                <div class="tab-hd tab-control tab-skin-main">
+                    <a class="tab-btn-prev tab-btn" href="javascript:void(0)">&lt;</a>
+                    <a class="tab-btn-next tab-btn" href="javascript:void(0)">&gt;</a>
+                    <ul>
+                                                                                <li class="current" data="26">电影</li>
+                                                                                <li data="4">电视剧</li>
+                                                                                <li data="19">综艺</li>
+                                                                                <li data="23">动漫</li>
+                                                                                <li data="500">歌曲</li>
+                                            </ul>
+                </div>
+                        <div class="tab-bd">
+                                                                                    																						
+							
+														<div class="tab-box">
+																	
+
+
+
+
+
+<div class="list-tt">
+	<span class="tt-index">排名</span>
+	<span class="tt-title">关键词</span>
+	<span class="tt-value">搜索指数</span>
+</div>
+ <ul class="item-list">
+					<li class="current">
+				<div class="item-hd">
+											<span class="num-top">1</span>
+										
+																
+                                                                                                            					<a target="_blank" title="八佰" data="26|26" class="list-title" href="javascript:;" href_top="./detail?b=26&w=%B0%CB%B0%DB">八佰</a>
+							
+					
+											<span class="icon-rise">13331</span>
+										<a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+				</div>
+									<div class="item-bd" style="display: block; height: 122px;"></div>
+							</li>
+				<li>
+				<div class="item-hd">
+											<span class="num-top">2</span>
+										
+																
+                                                                                                            					<a target="_blank" title="恶之花" data="26|26" class="list-title" href="javascript:;" href_top="./detail?b=26&w=%B6%F1%D6%AE%BB%A8">恶之花</a>
+							
+					
+											<span class="icon-rise">11059</span>
+										<a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+				</div>
+									<div class="item-bd" style="display:none;"></div>
+							</li>
+				<li>
+				<div class="item-hd">
+											<span class="num-top">3</span>
+										
+																
+                                                                                                            					<a target="_blank" title="信条" data="26|26" class="list-title" href="javascript:;" href_top="./detail?b=26&w=%D0%C5%CC%F5">信条</a>
+							
+					
+											<span class="icon-fall">7849</span>
+										<a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+				</div>
+									<div class="item-bd" style="display:none;"></div>
+							</li>
+				<li>
+				<div class="item-hd">
+											<span class="num-normal">4</span>
+										
+																
+                                                                                                            					<a target="_blank" title="花木兰" data="26|26" class="list-title" href="javascript:;" href_top="./detail?b=26&w=%BB%A8%C4%BE%C0%BC">花木兰</a>
+							
+					
+											<span class="icon-fall">6774</span>
+										<a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+				</div>
+									<div class="item-bd" style="display:none;"></div>
+							</li>
+				<li>
+				<div class="item-hd">
+											<span class="num-normal">5</span>
+										
+																
+                                                                                                            					<a target="_blank" title="我的女友是机器人" data="26|26" class="list-title" href="javascript:;" href_top="./detail?b=26&w=%CE%D2%B5%C4%C5%AE%D3%D1%CA%C7%BB%FA%C6%F7%C8%CB">我的女友是机器人</a>
+							
+					
+											<span class="icon-rise">4523</span>
+										<a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+				</div>
+									<div class="item-bd" style="display:none;"></div>
+							</li>
+				<li>
+				<div class="item-hd">
+											<span class="num-normal">6</span>
+										
+																
+                                                                                                            					<a target="_blank" title="摩天大楼" data="26|26" class="list-title" href="javascript:;" href_top="./detail?b=26&w=%C4%A6%CC%EC%B4%F3%C2%A5">摩天大楼</a>
+							
+					
+											<span class="icon-fall">3323</span>
+										<a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+				</div>
+									<div class="item-bd" style="display:none;"></div>
+							</li>
+				<li>
+				<div class="item-hd">
+											<span class="num-normal">7</span>
+										
+																
+                                                                                                            					<a target="_blank" title="七七事变" data="26|26" class="list-title" href="javascript:;" href_top="./detail?b=26&w=%C6%DF%C6%DF%CA%C2%B1%E4">七七事变</a>
+							
+					
+											<span class="icon-rise">3307</span>
+										<a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+				</div>
+									<div class="item-bd" style="display:none;"></div>
+							</li>
+				<li>
+				<div class="item-hd">
+											<span class="num-normal">8</span>
+										
+																
+                                                                                                            					<a target="_blank" title="在劫难逃" data="26|26" class="list-title" href="javascript:;" href_top="./detail?b=26&w=%D4%DA%BD%D9%C4%D1%CC%D3">在劫难逃</a>
+							
+					
+											<span class="icon-fall">3058</span>
+										<a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+				</div>
+									<div class="item-bd" style="display:none;"></div>
+							</li>
+				<li>
+				<div class="item-hd">
+											<span class="num-normal">9</span>
+										
+																
+                                                                                                            					<a target="_blank" title="盗墓笔记" data="26|26" class="list-title" href="javascript:;" href_top="./detail?b=26&w=%B5%C1%C4%B9%B1%CA%BC%C7">盗墓笔记</a>
+							
+					
+											<span class="icon-fall">2612</span>
+										<a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+				</div>
+									<div class="item-bd" style="display:none;"></div>
+							</li>
+				<li>
+				<div class="item-hd">
+											<span class="num-normal">10</span>
+										
+																
+                                                                                                            					<a target="_blank" title="阿甘正传" data="26|26" class="list-title" href="javascript:;" href_top="./detail?b=26&w=%B0%A2%B8%CA%D5%FD%B4%AB">阿甘正传</a>
+							
+					
+											<span class="icon-rise">2242</span>
+										<a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+				</div>
+									<div class="item-bd" style="display:none;"></div>
+							</li>
+			</ul>
+<a class="whole" href="javascript:;">完整榜单</a>
+								                            </div>
+                                                                                                                        <div class="tab-box" style="display:none"></div>
+                                                                                                                        <div class="tab-box" style="display:none"></div>
+                                                                                                                        <div class="tab-box" style="display:none"></div>
+                                                                                                                        <div class="tab-box" style="display:none"></div>
+                                                                        </div>
+        </div>
+    </div>
+</div>
+									                                                                        
+
+<div class="box-cont">
+    <div class="hd">
+        <h2 class="title title-blue"><span class="icon renwu">&nbsp;</span><a href="javascript:;">人物</a></h2>
+        <a class="more" href="javascript:;">更多 &gt;</a>
+    </div>
+    <div class="bd">
+        <div class="tab">
+              
+                <div class="tab-hd tab-control tab-skin-main tab-skin-main-blue">
+                    <a class="tab-btn-prev tab-btn" href="javascript:void(0)">&lt;</a>
+                    <a class="tab-btn-next tab-btn" href="javascript:void(0)">&gt;</a>
+                    <ul>
+                                                                                <li class="current" data="258">热点人物</li>
+                                                                                <li data="260">名家人物</li>
+                                                                                <li data="612">公益人物</li>
+                                                                                <li data="261">财经人物</li>
+                                                                                <li data="255">体坛人物</li>
+                                                                                <li data="454">主持人</li>
+                                                                                <li data="259">历史人物</li>
+                                                                                <li data="257">互联网人物</li>
+                                                                                <li data="1570">女明星</li>
+                                                                                <li data="1569">男明星</li>
+                                                                                <li data="491">欧美明星</li>
+                                            </ul>
+                </div>
+                        <div class="tab-bd tab-bd-blue">
+                                                                                    																						
+							
+														<div class="tab-box">
+																	
+
+
+
+
+
+<div class="list-tt">
+	<span class="tt-index">排名</span>
+	<span class="tt-title">关键词</span>
+	<span class="tt-value">搜索指数</span>
+</div>
+ <ul class="item-list">
+					<li class="current">
+				<div class="item-hd">
+											<span class="num-top">1</span>
+										
+																
+                                                                                                            					<a target="_blank" title="黄鸿升" data="258|258" class="list-title" href="javascript:;" href_top="./detail?b=258&w=%BB%C6%BA%E8%C9%FD">黄鸿升</a>
+							
+					
+											<span class="icon-fall">19756</span>
+										<a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+				</div>
+									<div class="item-bd" style="display: block; height: 122px;"></div>
+							</li>
+				<li>
+				<div class="item-hd">
+											<span class="num-top">2</span>
+										
+																
+                                                                                                            					<a target="_blank" title="朱一龙" data="258|258" class="list-title" href="javascript:;" href_top="./detail?b=258&w=%D6%EC%D2%BB%C1%FA">朱一龙</a>
+							
+					
+											<span class="icon-fall">8615</span>
+										<a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+				</div>
+									<div class="item-bd" style="display:none;"></div>
+							</li>
+				<li>
+				<div class="item-hd">
+											<span class="num-top">3</span>
+										
+																
+                                                                                                            					<a target="_blank" title="赵露思" data="258|258" class="list-title" href="javascript:;" href_top="./detail?b=258&w=%D5%D4%C2%B6%CB%BC">赵露思</a>
+							
+					
+											<span class="icon-fall">7887</span>
+										<a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+				</div>
+									<div class="item-bd" style="display:none;"></div>
+							</li>
+				<li>
+				<div class="item-hd">
+											<span class="num-normal">4</span>
+										
+																
+                                                                                                            					<a target="_blank" title="唐纳德·特朗普" data="258|258" class="list-title" href="javascript:;" href_top="./detail?b=258&w=%CC%C6%C4%C9%B5%C2%A1%A4%CC%D8%C0%CA%C6%D5">唐纳德·特朗普</a>
+							
+					
+											<span class="icon-rise">7559</span>
+										<a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+				</div>
+									<div class="item-bd" style="display:none;"></div>
+							</li>
+				<li>
+				<div class="item-hd">
+											<span class="num-normal">5</span>
+										
+																
+                                                                                                            					<a target="_blank" title="小沈阳" data="258|258" class="list-title" href="javascript:;" href_top="./detail?b=258&w=%D0%A1%C9%F2%D1%F4">小沈阳</a>
+							
+					
+											<span class="icon-rise">6871</span>
+										<a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+				</div>
+									<div class="item-bd" style="display:none;"></div>
+							</li>
+				<li>
+				<div class="item-hd">
+											<span class="num-normal">6</span>
+										
+																
+                                                                                                            					<a target="_blank" title="徐正溪" data="258|258" class="list-title" href="javascript:;" href_top="./detail?b=258&w=%D0%EC%D5%FD%CF%AA">徐正溪</a>
+							
+					
+											<span class="icon-fall">6130</span>
+										<a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+				</div>
+									<div class="item-bd" style="display:none;"></div>
+							</li>
+				<li>
+				<div class="item-hd">
+											<span class="num-normal">7</span>
+										
+																
+                                                                                                            					<a target="_blank" title="王一博" data="258|258" class="list-title" href="javascript:;" href_top="./detail?b=258&w=%CD%F5%D2%BB%B2%A9">王一博</a>
+							
+					
+											<span class="icon-fall">5752</span>
+										<a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+				</div>
+									<div class="item-bd" style="display:none;"></div>
+							</li>
+				<li>
+				<div class="item-hd">
+											<span class="num-normal">8</span>
+										
+																
+                                                                                                            					<a target="_blank" title="吴彦祖" data="258|258" class="list-title" href="javascript:;" href_top="./detail?b=258&w=%CE%E2%D1%E5%D7%E6">吴彦祖</a>
+							
+					
+											<span class="icon-fair">4289</span>
+										<a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+				</div>
+									<div class="item-bd" style="display:none;"></div>
+							</li>
+				<li>
+				<div class="item-hd">
+											<span class="num-normal">9</span>
+										
+																
+                                                                                                            					<a target="_blank" title="马睿菈" data="258|258" class="list-title" href="javascript:;" href_top="./detail?b=258&w=%C2%ED%EE%A3%C7%89">马睿菈</a>
+					<span class="icon icon-new"></span>		
+					
+											<span class="icon-rise">4148</span>
+										<a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+				</div>
+									<div class="item-bd" style="display:none;"></div>
+							</li>
+				<li>
+				<div class="item-hd">
+											<span class="num-normal">10</span>
+										
+																
+                                                                                                            					<a target="_blank" title="谭松韵" data="258|258" class="list-title" href="javascript:;" href_top="./detail?b=258&w=%CC%B7%CB%C9%D4%CF">谭松韵</a>
+							
+					
+											<span class="icon-rise">4010</span>
+										<a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+				</div>
+									<div class="item-bd" style="display:none;"></div>
+							</li>
+			</ul>
+<a class="whole" href="javascript:;">完整榜单</a>
+								                            </div>
+                                                                                                                        <div class="tab-box" style="display:none"></div>
+                                                                                                                        <div class="tab-box" style="display:none"></div>
+                                                                                                                        <div class="tab-box" style="display:none"></div>
+                                                                                                                        <div class="tab-box" style="display:none"></div>
+                                                                                                                        <div class="tab-box" style="display:none"></div>
+                                                                                                                        <div class="tab-box" style="display:none"></div>
+                                                                                                                        <div class="tab-box" style="display:none"></div>
+                                                                                                                        <div class="tab-box" style="display:none"></div>
+                                                                                                                        <div class="tab-box" style="display:none"></div>
+                                                                                                                        <div class="tab-box" style="display:none"></div>
+                                                                        </div>
+        </div>
+    </div>
+</div>
+									                                                                        
+
+<div class="box-cont box-last">
+    <div class="hd">
+        <h2 class="title title-brown"><span class="icon novel">&nbsp;</span><a href="javascript:;">小说</a></h2>
+        <a class="more" href="javascript:;">更多 &gt;</a>
+    </div>
+    <div class="bd">
+        <div class="tab">
+              
+                <div class="tab-hd tab-control tab-skin-main tab-skin-main-brown">
+                    <a class="tab-btn-prev tab-btn" href="javascript:void(0)">&lt;</a>
+                    <a class="tab-btn-next tab-btn" href="javascript:void(0)">&gt;</a>
+                    <ul>
+                                                                                <li class="current" data="7">全部</li>
+                                                                                <li data="353">玄幻</li>
+                                                                                <li data="355">言情</li>
+                                                                                <li data="354">武侠</li>
+                                                                                <li data="1508">青春</li>
+                                                                                <li data="1509">穿越</li>
+                                                                                <li data="356">悬疑</li>
+                                                                                <li data="459">历史</li>
+                                                                                <li data="1512">游戏</li>
+                                                                                <li data="1510">耽美</li>
+                                                                                <li data="1513">文学</li>
+                                                                                <li data="461">完结</li>
+                                                                                <li data="460">免费</li>
+                                            </ul>
+                </div>
+                        <div class="tab-bd tab-bd-brown">
+                                                                                    																						
+							
+														<div class="tab-box">
+																	
+
+
+
+
+
+<div class="list-tt">
+	<span class="tt-index">排名</span>
+	<span class="tt-title">关键词</span>
+	<span class="tt-value">搜索指数</span>
+</div>
+ <ul class="item-list">
+					<li class="current">
+				<div class="item-hd">
+											<span class="num-top">1</span>
+										
+																
+                                                                                                            					<a target="_blank" title="元尊" data="7|7" class="list-title" href="javascript:;" href_top="./detail?b=7&w=%D4%AA%D7%F0">元尊</a>
+							
+					
+											<span class="icon-fall">14961</span>
+										<a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+				</div>
+									<div class="item-bd" style="display: block; height: 122px;"></div>
+							</li>
+				<li>
+				<div class="item-hd">
+											<span class="num-top">2</span>
+										
+																
+                                                                                                            					<a target="_blank" title="剑来" data="7|7" class="list-title" href="javascript:;" href_top="./detail?b=7&w=%BD%A3%C0%B4">剑来</a>
+							
+					
+											<span class="icon-rise">13197</span>
+										<a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+				</div>
+									<div class="item-bd" style="display:none;"></div>
+							</li>
+				<li>
+				<div class="item-hd">
+											<span class="num-top">3</span>
+										
+																
+                                                                                                            					<a target="_blank" title="三寸人间" data="7|7" class="list-title" href="javascript:;" href_top="./detail?b=7&w=%C8%FD%B4%E7%C8%CB%BC%E4">三寸人间</a>
+							
+					
+											<span class="icon-fair">8679</span>
+										<a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+				</div>
+									<div class="item-bd" style="display:none;"></div>
+							</li>
+				<li>
+				<div class="item-hd">
+											<span class="num-normal">4</span>
+										
+																
+                                                                                                            					<a target="_blank" title="万古神帝" data="7|7" class="list-title" href="javascript:;" href_top="./detail?b=7&w=%CD%F2%B9%C5%C9%F1%B5%DB">万古神帝</a>
+							
+					
+											<span class="icon-fall">7015</span>
+										<a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+				</div>
+									<div class="item-bd" style="display:none;"></div>
+							</li>
+				<li>
+				<div class="item-hd">
+											<span class="num-normal">5</span>
+										
+																
+                                                                                                            					<a target="_blank" title="斗罗大陆" data="7|7" class="list-title" href="javascript:;" href_top="./detail?b=7&w=%B6%B7%C2%DE%B4%F3%C2%BD">斗罗大陆</a>
+							
+					
+											<span class="icon-rise">6706</span>
+										<a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+				</div>
+									<div class="item-bd" style="display:none;"></div>
+							</li>
+				<li>
+				<div class="item-hd">
+											<span class="num-normal">6</span>
+										
+																
+                                                                                                            					<a target="_blank" title="武炼巅峰" data="7|7" class="list-title" href="javascript:;" href_top="./detail?b=7&w=%CE%E4%C1%B6%E1%DB%B7%E5">武炼巅峰</a>
+							
+					
+											<span class="icon-fall">6021</span>
+										<a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+				</div>
+									<div class="item-bd" style="display:none;"></div>
+							</li>
+				<li>
+				<div class="item-hd">
+											<span class="num-normal">7</span>
+										
+																
+                                                                                                            					<a target="_blank" title="圣墟" data="7|7" class="list-title" href="javascript:;" href_top="./detail?b=7&w=%CA%A5%D0%E6">圣墟</a>
+							
+					
+											<span class="icon-rise">5984</span>
+										<a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+				</div>
+									<div class="item-bd" style="display:none;"></div>
+							</li>
+				<li>
+				<div class="item-hd">
+											<span class="num-normal">8</span>
+										
+																
+                                                                                                            					<a target="_blank" title="阴阳师" data="7|7" class="list-title" href="javascript:;" href_top="./detail?b=7&w=%D2%F5%D1%F4%CA%A6">阴阳师</a>
+							
+					
+											<span class="icon-fall">5902</span>
+										<a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+				</div>
+									<div class="item-bd" style="display:none;"></div>
+							</li>
+				<li>
+				<div class="item-hd">
+											<span class="num-normal">9</span>
+										
+																
+                                                                                                            					<a target="_blank" title="伏天氏" data="7|7" class="list-title" href="javascript:;" href_top="./detail?b=7&w=%B7%FC%CC%EC%CA%CF">伏天氏</a>
+							
+					
+											<span class="icon-rise">5879</span>
+										<a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+				</div>
+									<div class="item-bd" style="display:none;"></div>
+							</li>
+				<li>
+				<div class="item-hd">
+											<span class="num-normal">10</span>
+										
+																
+                                                                                                            					<a target="_blank" title="元神" data="7|7" class="list-title" href="javascript:;" href_top="./detail?b=7&w=%D4%AA%C9%F1">元神</a>
+							
+					
+											<span class="icon-fall">5061</span>
+										<a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+				</div>
+									<div class="item-bd" style="display:none;"></div>
+							</li>
+			</ul>
+<a class="whole" href="javascript:;">完整榜单</a>
+								                            </div>
+                                                                                                                        <div class="tab-box" style="display:none"></div>
+                                                                                                                        <div class="tab-box" style="display:none"></div>
+                                                                                                                        <div class="tab-box" style="display:none"></div>
+                                                                                                                        <div class="tab-box" style="display:none"></div>
+                                                                                                                        <div class="tab-box" style="display:none"></div>
+                                                                                                                        <div class="tab-box" style="display:none"></div>
+                                                                                                                        <div class="tab-box" style="display:none"></div>
+                                                                                                                        <div class="tab-box" style="display:none"></div>
+                                                                                                                        <div class="tab-box" style="display:none"></div>
+                                                                                                                        <div class="tab-box" style="display:none"></div>
+                                                                                                                        <div class="tab-box" style="display:none"></div>
+                                                                                                                        <div class="tab-box" style="display:none"></div>
+                                                                        </div>
+        </div>
+    </div>
+</div>
+									                                                                        
+
+<div class="box-cont">
+    <div class="hd">
+        <h2 class="title"><span class="icon redian">&nbsp;</span><a href="javascript:;">热点</a></h2>
+        <a class="more" href="javascript:;">更多 &gt;</a>
+    </div>
+    <div class="bd">
+        <div class="tab">
+              
+                <div class="tab-hd tab-control tab-skin-main">
+                    <a class="tab-btn-prev tab-btn" href="javascript:void(0)">&lt;</a>
+                    <a class="tab-btn-next tab-btn" href="javascript:void(0)">&gt;</a>
+                    <ul>
+                                                                                <li class="current" data="1">实时热点</li>
+                                                                                <li data="341">今日热点</li>
+                                                                                <li data="42">七日热点</li>
+                                            </ul>
+                </div>
+                        <div class="tab-bd">
+                                                                                    																						
+							
+														<div class="tab-box">
+																	
+
+
+
+
+
+<div class="list-tt">
+	<span class="tt-index">排名</span>
+	<span class="tt-title">关键词</span>
+	<span class="tt-value">搜索指数</span>
+</div>
+ <ul class="item-list">
+					<li class="current">
+				<div class="item-hd">
+											<span class="num-top">1</span>
+										
+																
+                                                                                                            					<a target="_blank" title="21世纪仅4次中秋国庆同一天" data="1|1" class="list-title" href="javascript:;" href_top="./detail?b=1&w=21%CA%C0%BC%CD%BD%F64%B4%CE%D6%D0%C7%EF%B9%FA%C7%EC%CD%AC%D2%BB%CC%EC">21世纪仅4次中秋..</a>
+							
+					
+											<span class="icon-fall">4575761</span>
+										<a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+				</div>
+									<div class="item-bd" style="display: block; height: 122px;"></div>
+							</li>
+				<li>
+				<div class="item-hd">
+											<span class="num-top">2</span>
+										
+																
+                                                                                                            					<a target="_blank" title="嫦娥五号年底前发射" data="1|1" class="list-title" href="javascript:;" href_top="./detail?b=1&w=%E6%CF%B6%F0%CE%E5%BA%C5%C4%EA%B5%D7%C7%B0%B7%A2%C9%E4">嫦娥五号年底前发射</a>
+							
+					
+											<span class="icon-fall">4415609</span>
+										<a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+				</div>
+									<div class="item-bd" style="display:none;"></div>
+							</li>
+				<li>
+				<div class="item-hd">
+											<span class="num-top">3</span>
+										
+																
+                                                                                                            					<a target="_blank" title="蔡徐坤喇叭裤" data="1|1" class="list-title" href="javascript:;" href_top="./detail?b=1&w=%B2%CC%D0%EC%C0%A4%C0%AE%B0%C8%BF%E3">蔡徐坤喇叭裤</a>
+							
+					
+											<span class="icon-fall">4261063</span>
+										<a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+				</div>
+									<div class="item-bd" style="display:none;"></div>
+							</li>
+				<li>
+				<div class="item-hd">
+											<span class="num-normal">4</span>
+										
+																
+                                                                                                            					<a target="_blank" title="张靓颖荆棘头饰" data="1|1" class="list-title" href="javascript:;" href_top="./detail?b=1&w=%D5%C5%F6%A6%D3%B1%BE%A3%BC%AC%CD%B7%CA%CE">张靓颖荆棘头饰</a>
+							
+					
+											<span class="icon-fall">4111925</span>
+										<a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+				</div>
+									<div class="item-bd" style="display:none;"></div>
+							</li>
+				<li>
+				<div class="item-hd">
+											<span class="num-normal">5</span>
+										
+																
+                                                                                                            					<a target="_blank" title="印度新冠治愈病例成世界第一" data="1|1" class="list-title" href="javascript:;" href_top="./detail?b=1&w=%D3%A1%B6%C8%D0%C2%B9%DA%D6%CE%D3%FA%B2%A1%C0%FD%B3%C9%CA%C0%BD%E7%B5%DA%D2%BB">印度新冠治愈病例成..</a>
+							
+					
+											<span class="icon-fall">3968008</span>
+										<a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+				</div>
+									<div class="item-bd" style="display:none;"></div>
+							</li>
+				<li>
+				<div class="item-hd">
+											<span class="num-normal">6</span>
+										
+																
+                                                                                                            					<a target="_blank" title="许佳琪湿发金边眼镜造型" data="1|1" class="list-title" href="javascript:;" href_top="./detail?b=1&w=%D0%ED%BC%D1%E7%F7%CA%AA%B7%A2%BD%F0%B1%DF%D1%DB%BE%B5%D4%EC%D0%CD">许佳琪湿发金边眼镜..</a>
+							
+					
+											<span class="icon-fall">3829128</span>
+										<a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+				</div>
+									<div class="item-bd" style="display:none;"></div>
+							</li>
+				<li>
+				<div class="item-hd">
+											<span class="num-normal">7</span>
+										
+																
+                                                                                                            					<a target="_blank" title="邓紫棋Fly Away 好稳" data="1|1" class="list-title" href="javascript:;" href_top="./detail?b=1&w=%B5%CB%D7%CF%C6%E5Fly%20Away%20%BA%C3%CE%C8">邓紫棋Fly Aw..</a>
+					<span class="icon icon-new"></span>		
+					
+											<span class="icon-fall">3695108</span>
+										<a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+				</div>
+									<div class="item-bd" style="display:none;"></div>
+							</li>
+				<li>
+				<div class="item-hd">
+											<span class="num-normal">8</span>
+										
+																
+                                                                                                            					<a target="_blank" title="腾格尔草原味last dance" data="1|1" class="list-title" href="javascript:;" href_top="./detail?b=1&w=%CC%DA%B8%F1%B6%FB%B2%DD%D4%AD%CE%B6last%20dance">腾格尔草原味las..</a>
+							
+					
+											<span class="icon-fall">3565779</span>
+										<a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+				</div>
+									<div class="item-bd" style="display:none;"></div>
+							</li>
+				<li>
+				<div class="item-hd">
+											<span class="num-normal">9</span>
+										
+																
+                                                                                                            					<a target="_blank" title="The9一键换装舞台" data="1|1" class="list-title" href="javascript:;" href_top="./detail?b=1&w=The9%D2%BB%BC%FC%BB%BB%D7%B0%CE%E8%CC%A8">The9一键换装舞..</a>
+							
+					
+											<span class="icon-fall">3440977</span>
+										<a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+				</div>
+									<div class="item-bd" style="display:none;"></div>
+							</li>
+				<li>
+				<div class="item-hd">
+											<span class="num-normal">10</span>
+										
+																
+                                                                                                            					<a target="_blank" title="气运联盟衣服好绿" data="1|1" class="list-title" href="javascript:;" href_top="./detail?b=1&w=%C6%F8%D4%CB%C1%AA%C3%CB%D2%C2%B7%FE%BA%C3%C2%CC">气运联盟衣服好绿</a>
+					<span class="icon icon-new"></span>		
+					
+											<span class="icon-fall">3320543</span>
+										<a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+				</div>
+									<div class="item-bd" style="display:none;"></div>
+							</li>
+			</ul>
+<a class="whole" href="javascript:;">完整榜单</a>
+								                            </div>
+                                                                                                                        <div class="tab-box" style="display:none"></div>
+                                                                                                                        <div class="tab-box" style="display:none"></div>
+                                                                        </div>
+        </div>
+    </div>
+</div>
+									                                                                        
+
+<div class="box-cont">
+    <div class="hd">
+        <h2 class="title title-blue"><span class="icon automobile">&nbsp;</span><a href="javascript:;">汽车</a></h2>
+        <a class="more" href="javascript:;">更多 &gt;</a>
+    </div>
+    <div class="bd">
+        <div class="tab">
+              
+                <div class="tab-hd tab-control tab-skin-main tab-skin-main-blue">
+                    <a class="tab-btn-prev tab-btn" href="javascript:void(0)">&lt;</a>
+                    <a class="tab-btn-next tab-btn" href="javascript:void(0)">&gt;</a>
+                    <ul>
+                                                                                <li class="current" data="1564">汽车</li>
+                                            </ul>
+                </div>
+                        <div class="tab-bd tab-bd-blue">
+                                                                                    																						
+							
+														<div class="tab-box">
+																		
+
+
+
+
+
+<div class="list-tt">
+	<span class="tt-index">排名</span>
+	<span class="tt-title">关键词</span>
+	<span class="tt-value">关注度</span>
+</div>
+ <ul class="item-list">
+					<li class="current">
+				<div class="item-hd">
+											<span class="num-top">1</span>
+										
+																
+                                                                                                            					<a target="_blank" title="大众" data="1564|1564" class="list-title" href="javascript:;" href_top="./detail?b=1564&w=%B4%F3%D6%DA">大众</a>
+							
+					
+											<div class="icon-attention attention-red fr"><span style="width:100%">&nbsp;</span></div>
+										<a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+				</div>
+									<div class="item-bd" style="display: block; height: 122px;"></div>
+							</li>
+				<li>
+				<div class="item-hd">
+											<span class="num-top">2</span>
+										
+																
+                                                                                                            					<a target="_blank" title="丰田" data="1564|1564" class="list-title" href="javascript:;" href_top="./detail?b=1564&w=%B7%E1%CC%EF">丰田</a>
+							
+					
+											<div class="icon-attention attention-red fr"><span style="width:91%">&nbsp;</span></div>
+										<a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+				</div>
+									<div class="item-bd" style="display:none;"></div>
+							</li>
+				<li>
+				<div class="item-hd">
+											<span class="num-top">3</span>
+										
+																
+                                                                                                            					<a target="_blank" title="奔驰" data="1564|1564" class="list-title" href="javascript:;" href_top="./detail?b=1564&w=%B1%BC%B3%DB">奔驰</a>
+							
+					
+											<div class="icon-attention attention-red fr"><span style="width:79%">&nbsp;</span></div>
+										<a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+				</div>
+									<div class="item-bd" style="display:none;"></div>
+							</li>
+				<li>
+				<div class="item-hd">
+											<span class="num-normal">4</span>
+										
+																
+                                                                                                            					<a target="_blank" title="宝马" data="1564|1564" class="list-title" href="javascript:;" href_top="./detail?b=1564&w=%B1%A6%C2%ED">宝马</a>
+							
+					
+											<div class="icon-attention attention-red fr"><span style="width:77%">&nbsp;</span></div>
+										<a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+				</div>
+									<div class="item-bd" style="display:none;"></div>
+							</li>
+				<li>
+				<div class="item-hd">
+											<span class="num-normal">5</span>
+										
+																
+                                                                                                            					<a target="_blank" title="本田" data="1564|1564" class="list-title" href="javascript:;" href_top="./detail?b=1564&w=%B1%BE%CC%EF">本田</a>
+							
+					
+											<div class="icon-attention attention-red fr"><span style="width:75%">&nbsp;</span></div>
+										<a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+				</div>
+									<div class="item-bd" style="display:none;"></div>
+							</li>
+				<li>
+				<div class="item-hd">
+											<span class="num-normal">6</span>
+										
+																
+                                                                                                            					<a target="_blank" title="奥迪" data="1564|1564" class="list-title" href="javascript:;" href_top="./detail?b=1564&w=%B0%C2%B5%CF">奥迪</a>
+							
+					
+											<div class="icon-attention attention-red fr"><span style="width:74%">&nbsp;</span></div>
+										<a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+				</div>
+									<div class="item-bd" style="display:none;"></div>
+							</li>
+				<li>
+				<div class="item-hd">
+											<span class="num-normal">7</span>
+										
+																
+                                                                                                            					<a target="_blank" title="吉利" data="1564|1564" class="list-title" href="javascript:;" href_top="./detail?b=1564&w=%BC%AA%C0%FB">吉利</a>
+							
+					
+											<div class="icon-attention attention-red fr"><span style="width:50%">&nbsp;</span></div>
+										<a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+				</div>
+									<div class="item-bd" style="display:none;"></div>
+							</li>
+				<li>
+				<div class="item-hd">
+											<span class="num-normal">8</span>
+										
+																
+                                                                                                            					<a target="_blank" title="哈弗" data="1564|1564" class="list-title" href="javascript:;" href_top="./detail?b=1564&w=%B9%FE%B8%A5">哈弗</a>
+							
+					
+											<div class="icon-attention attention-red fr"><span style="width:47%">&nbsp;</span></div>
+										<a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+				</div>
+									<div class="item-bd" style="display:none;"></div>
+							</li>
+				<li>
+				<div class="item-hd">
+											<span class="num-normal">9</span>
+										
+																
+                                                                                                            					<a target="_blank" title="日产" data="1564|1564" class="list-title" href="javascript:;" href_top="./detail?b=1564&w=%C8%D5%B2%FA">日产</a>
+							
+					
+											<div class="icon-attention attention-red fr"><span style="width:38%">&nbsp;</span></div>
+										<a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+				</div>
+									<div class="item-bd" style="display:none;"></div>
+							</li>
+				<li>
+				<div class="item-hd">
+											<span class="num-normal">10</span>
+										
+																
+                                                                                                            					<a target="_blank" title="保时捷" data="1564|1564" class="list-title" href="javascript:;" href_top="./detail?b=1564&w=%B1%A3%CA%B1%BD%DD">保时捷</a>
+							
+					
+											<div class="icon-attention attention-red fr"><span style="width:34%">&nbsp;</span></div>
+										<a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+				</div>
+									<div class="item-bd" style="display:none;"></div>
+							</li>
+			</ul>
+<a class="whole" href="javascript:;">完整榜单</a>
+								                            </div>
+                                                                        </div>
+        </div>
+    </div>
+</div>
+									                                                                        
+
+<div class="box-cont box-last">
+    <div class="hd">
+        <h2 class="title title-brown"><span class="icon science">&nbsp;</span><a href="javascript:;">科技</a></h2>
+        <a class="more" href="javascript:;">更多 &gt;</a>
+    </div>
+    <div class="bd">
+        <div class="tab">
+              
+                <div class="tab-hd tab-control tab-skin-main tab-skin-main-brown">
+                    <a class="tab-btn-prev tab-btn" href="javascript:void(0)">&lt;</a>
+                    <a class="tab-btn-next tab-btn" href="javascript:void(0)">&gt;</a>
+                    <ul>
+                                                                                <li class="current" data="1566">手机</li>
+                                                                                <li data="1627">软件</li>
+                                            </ul>
+                </div>
+                        <div class="tab-bd tab-bd-brown">
+                                                                                    																						
+							
+														<div class="tab-box">
+																		
+
+
+
+
+
+<div class="list-tt">
+	<span class="tt-index">排名</span>
+	<span class="tt-title">关键词</span>
+	<span class="tt-value">关注度</span>
+</div>
+ <ul class="item-list">
+					<li class="current">
+				<div class="item-hd">
+											<span class="num-top">1</span>
+										
+																
+                                                                                                            					<a target="_blank" title="iphone" data="1566|1566" class="list-title" href="javascript:;" href_top="./detail?b=1566&w=iphone">iphone</a>
+							
+					
+											<div class="icon-attention attention-red fr"><span style="width:100%">&nbsp;</span></div>
+										<a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+				</div>
+									<div class="item-bd" style="display: block; height: 122px;"></div>
+							</li>
+				<li>
+				<div class="item-hd">
+											<span class="num-top">2</span>
+										
+																
+                                                                                                            					<a target="_blank" title="华为" data="1566|1566" class="list-title" href="javascript:;" href_top="./detail?b=1566&w=%BB%AA%CE%AA">华为</a>
+							
+					
+											<div class="icon-attention attention-red fr"><span style="width:62%">&nbsp;</span></div>
+										<a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+				</div>
+									<div class="item-bd" style="display:none;"></div>
+							</li>
+				<li>
+				<div class="item-hd">
+											<span class="num-top">3</span>
+										
+																
+                                                                                                            					<a target="_blank" title="小米手机" data="1566|1566" class="list-title" href="javascript:;" href_top="./detail?b=1566&w=%D0%A1%C3%D7%CA%D6%BB%FA">小米手机</a>
+							
+					
+											<div class="icon-attention attention-red fr"><span style="width:33%">&nbsp;</span></div>
+										<a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+				</div>
+									<div class="item-bd" style="display:none;"></div>
+							</li>
+				<li>
+				<div class="item-hd">
+											<span class="num-normal">4</span>
+										
+																
+                                                                                                            					<a target="_blank" title="oppo" data="1566|1566" class="list-title" href="javascript:;" href_top="./detail?b=1566&w=oppo">oppo</a>
+							
+					
+											<div class="icon-attention attention-red fr"><span style="width:24%">&nbsp;</span></div>
+										<a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+				</div>
+									<div class="item-bd" style="display:none;"></div>
+							</li>
+				<li>
+				<div class="item-hd">
+											<span class="num-normal">5</span>
+										
+																
+                                                                                                            					<a target="_blank" title="vivo" data="1566|1566" class="list-title" href="javascript:;" href_top="./detail?b=1566&w=vivo">vivo</a>
+							
+					
+											<div class="icon-attention attention-red fr"><span style="width:23%">&nbsp;</span></div>
+										<a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+				</div>
+									<div class="item-bd" style="display:none;"></div>
+							</li>
+				<li>
+				<div class="item-hd">
+											<span class="num-normal">6</span>
+										
+																
+                                                                                                            					<a target="_blank" title="荣耀" data="1566|1566" class="list-title" href="javascript:;" href_top="./detail?b=1566&w=%C8%D9%D2%AB">荣耀</a>
+							
+					
+											<div class="icon-attention attention-red fr"><span style="width:13%">&nbsp;</span></div>
+										<a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+				</div>
+									<div class="item-bd" style="display:none;"></div>
+							</li>
+				<li>
+				<div class="item-hd">
+											<span class="num-normal">7</span>
+										
+																
+                                                                                                            					<a target="_blank" title="三星" data="1566|1566" class="list-title" href="javascript:;" href_top="./detail?b=1566&w=%C8%FD%D0%C7">三星</a>
+							
+					
+											<div class="icon-attention attention-red fr"><span style="width:12%">&nbsp;</span></div>
+										<a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+				</div>
+									<div class="item-bd" style="display:none;"></div>
+							</li>
+				<li>
+				<div class="item-hd">
+											<span class="num-normal">8</span>
+										
+																
+                                                                                                            					<a target="_blank" title="魅族" data="1566|1566" class="list-title" href="javascript:;" href_top="./detail?b=1566&w=%F7%C8%D7%E5">魅族</a>
+							
+					
+											<div class="icon-attention attention-red fr"><span style="width:3%">&nbsp;</span></div>
+										<a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+				</div>
+									<div class="item-bd" style="display:none;"></div>
+							</li>
+				<li>
+				<div class="item-hd">
+											<span class="num-normal">9</span>
+										
+																
+                                                                                                            					<a target="_blank" title="诺基亚" data="1566|1566" class="list-title" href="javascript:;" href_top="./detail?b=1566&w=%C5%B5%BB%F9%D1%C7">诺基亚</a>
+							
+					
+											<div class="icon-attention attention-red fr"><span style="width:2%">&nbsp;</span></div>
+										<a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+				</div>
+									<div class="item-bd" style="display:none;"></div>
+							</li>
+				<li>
+				<div class="item-hd">
+											<span class="num-normal">10</span>
+										
+																
+                                                                                                            					<a target="_blank" title="一加手机" data="1566|1566" class="list-title" href="javascript:;" href_top="./detail?b=1566&w=%D2%BB%BC%D3%CA%D6%BB%FA">一加手机</a>
+							
+					
+											<div class="icon-attention attention-red fr"><span style="width:2%">&nbsp;</span></div>
+										<a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+				</div>
+									<div class="item-bd" style="display:none;"></div>
+							</li>
+			</ul>
+<a class="whole" href="javascript:;">完整榜单</a>
+								                            </div>
+                                                                                                                        <div class="tab-box" style="display:none"></div>
+                                                                        </div>
+        </div>
+    </div>
+</div>
+									                                                                        
+
+<div class="box-cont">
+    <div class="hd">
+        <h2 class="title"><span class="icon shenghuo">&nbsp;</span><a href="javascript:;">生活</a></h2>
+        <a class="more" href="javascript:;">更多 &gt;</a>
+    </div>
+    <div class="bd">
+        <div class="tab">
+              
+                <div class="tab-hd tab-control tab-skin-main">
+                    <a class="tab-btn-prev tab-btn" href="javascript:void(0)">&lt;</a>
+                    <a class="tab-btn-next tab-btn" href="javascript:void(0)">&gt;</a>
+                    <ul>
+                                                                                <li class="current" data="302">旅游城市</li>
+                                                                                <li data="14">风景名胜</li>
+                                                                                <li data="1579">博物馆</li>
+                                                                                <li data="24">宠物</li>
+                                                                                <li data="1434">小吃</li>
+                                                                                <li data="450">畅销书</li>
+                                                                                <li data="12">高校</li>
+                                                                                <li data="1565">化妆品</li>
+                                            </ul>
+                </div>
+                        <div class="tab-bd">
+                                                                                    																						
+							
+														<div class="tab-box">
+																	
+
+
+
+
+
+<div class="list-tt">
+	<span class="tt-index">排名</span>
+	<span class="tt-title">关键词</span>
+	<span class="tt-value">搜索指数</span>
+</div>
+ <ul class="item-list">
+					<li class="current">
+				<div class="item-hd">
+											<span class="num-top">1</span>
+										
+																
+                                                                                                            					<a target="_blank" title="西安" data="302|302" class="list-title" href="javascript:;" href_top="./detail?b=302&w=%CE%F7%B0%B2">西安</a>
+							
+					
+											<span class="icon-rise">3985</span>
+										<a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+				</div>
+									<div class="item-bd" style="display: block; height: 122px;"></div>
+							</li>
+				<li>
+				<div class="item-hd">
+											<span class="num-top">2</span>
+										
+																
+                                                                                                            					<a target="_blank" title="北京" data="302|302" class="list-title" href="javascript:;" href_top="./detail?b=302&w=%B1%B1%BE%A9">北京</a>
+							
+					
+											<span class="icon-rise">3825</span>
+										<a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+				</div>
+									<div class="item-bd" style="display:none;"></div>
+							</li>
+				<li>
+				<div class="item-hd">
+											<span class="num-top">3</span>
+										
+																
+                                                                                                            					<a target="_blank" title="杭州" data="302|302" class="list-title" href="javascript:;" href_top="./detail?b=302&w=%BA%BC%D6%DD">杭州</a>
+							
+					
+											<span class="icon-fall">3138</span>
+										<a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+				</div>
+									<div class="item-bd" style="display:none;"></div>
+							</li>
+				<li>
+				<div class="item-hd">
+											<span class="num-normal">4</span>
+										
+																
+                                                                                                            					<a target="_blank" title="郑州" data="302|302" class="list-title" href="javascript:;" href_top="./detail?b=302&w=%D6%A3%D6%DD">郑州</a>
+							
+					
+											<span class="icon-rise">2812</span>
+										<a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+				</div>
+									<div class="item-bd" style="display:none;"></div>
+							</li>
+				<li>
+				<div class="item-hd">
+											<span class="num-normal">5</span>
+										
+																
+                                                                                                            					<a target="_blank" title="青岛" data="302|302" class="list-title" href="javascript:;" href_top="./detail?b=302&w=%C7%E0%B5%BA">青岛</a>
+							
+					
+											<span class="icon-fair">2443</span>
+										<a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+				</div>
+									<div class="item-bd" style="display:none;"></div>
+							</li>
+				<li>
+				<div class="item-hd">
+											<span class="num-normal">6</span>
+										
+																
+                                                                                                            					<a target="_blank" title="厦门" data="302|302" class="list-title" href="javascript:;" href_top="./detail?b=302&w=%CF%C3%C3%C5">厦门</a>
+							
+					
+											<span class="icon-fall">2178</span>
+										<a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+				</div>
+									<div class="item-bd" style="display:none;"></div>
+							</li>
+				<li>
+				<div class="item-hd">
+											<span class="num-normal">7</span>
+										
+																
+                                                                                                            					<a target="_blank" title="香港" data="302|302" class="list-title" href="javascript:;" href_top="./detail?b=302&w=%CF%E3%B8%DB">香港</a>
+							
+					
+											<span class="icon-fall">2052</span>
+										<a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+				</div>
+									<div class="item-bd" style="display:none;"></div>
+							</li>
+				<li>
+				<div class="item-hd">
+											<span class="num-normal">8</span>
+										
+																
+                                                                                                            					<a target="_blank" title="济南" data="302|302" class="list-title" href="javascript:;" href_top="./detail?b=302&w=%BC%C3%C4%CF">济南</a>
+							
+					
+											<span class="icon-fall">1646</span>
+										<a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+				</div>
+									<div class="item-bd" style="display:none;"></div>
+							</li>
+				<li>
+				<div class="item-hd">
+											<span class="num-normal">9</span>
+										
+																
+                                                                                                            					<a target="_blank" title="南昌" data="302|302" class="list-title" href="javascript:;" href_top="./detail?b=302&w=%C4%CF%B2%FD">南昌</a>
+							
+					
+											<span class="icon-fall">1488</span>
+										<a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+				</div>
+									<div class="item-bd" style="display:none;"></div>
+							</li>
+				<li>
+				<div class="item-hd">
+											<span class="num-normal">10</span>
+										
+																
+                                                                                                            					<a target="_blank" title="澳门" data="302|302" class="list-title" href="javascript:;" href_top="./detail?b=302&w=%B0%C4%C3%C5">澳门</a>
+							
+					
+											<span class="icon-fall">1456</span>
+										<a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+				</div>
+									<div class="item-bd" style="display:none;"></div>
+							</li>
+			</ul>
+<a class="whole" href="javascript:;">完整榜单</a>
+								                            </div>
+                                                                                                                        <div class="tab-box" style="display:none"></div>
+                                                                                                                        <div class="tab-box" style="display:none"></div>
+                                                                                                                        <div class="tab-box" style="display:none"></div>
+                                                                                                                        <div class="tab-box" style="display:none"></div>
+                                                                                                                        <div class="tab-box" style="display:none"></div>
+                                                                                                                        <div class="tab-box" style="display:none"></div>
+                                                                                                                        <div class="tab-box" style="display:none"></div>
+                                                                        </div>
+        </div>
+    </div>
+</div>
+									                                                                        
+
+<div class="box-cont">
+    <div class="hd">
+        <h2 class="title title-blue"><span class="icon resou">&nbsp;</span><a href="javascript:;">热搜</a></h2>
+        <a class="more" href="javascript:;">更多 &gt;</a>
+    </div>
+    <div class="bd">
+        <div class="tab">
+              
+                <div class="tab-hd tab-control tab-skin-main tab-skin-main-blue">
+                    <a class="tab-btn-prev tab-btn" href="javascript:void(0)">&lt;</a>
+                    <a class="tab-btn-next tab-btn" href="javascript:void(0)">&gt;</a>
+                    <ul>
+                                                                                <li class="current" data="2">热门搜索</li>
+                                                                                <li data="396">世说新词</li>
+                                            </ul>
+                </div>
+                        <div class="tab-bd tab-bd-blue">
+                                                                                    																						
+							
+														<div class="tab-box">
+																	
+
+
+
+
+
+<div class="list-tt">
+	<span class="tt-index">排名</span>
+	<span class="tt-title">关键词</span>
+	<span class="tt-value">搜索指数</span>
+</div>
+ <ul class="item-list">
+					<li class="current">
+				<div class="item-hd">
+											<span class="num-top">1</span>
+										
+																
+                                                                                                            					<a target="_blank" title="武汉通报抗疫护士夫妇看演出身亡" data="2|2" class="list-title" href="javascript:;" href_top="./detail?b=2&w=%CE%E4%BA%BA%CD%A8%B1%A8%BF%B9%D2%DF%BB%A4%CA%BF%B7%F2%B8%BE%BF%B4%D1%DD%B3%F6%C9%ED%CD%F6">武汉通报抗疫护士夫..</a>
+					<span class="icon icon-new"></span>		
+					
+											<span class="icon-rise">706715</span>
+										<a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+				</div>
+									<div class="item-bd" style="display: block; height: 122px;"></div>
+							</li>
+				<li>
+				<div class="item-hd">
+											<span class="num-top">2</span>
+										
+																
+                                                                                                            					<a target="_blank" title="抗疫护士夫妇剧场身亡 企业回应" data="2|2" class="list-title" href="javascript:;" href_top="./detail?b=2&w=%BF%B9%D2%DF%BB%A4%CA%BF%B7%F2%B8%BE%BE%E7%B3%A1%C9%ED%CD%F6%20%C6%F3%D2%B5%BB%D8%D3%A6">抗疫护士夫妇剧场身..</a>
+					<span class="icon icon-new"></span>		
+					
+											<span class="icon-rise">457999</span>
+										<a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+				</div>
+									<div class="item-bd" style="display:none;"></div>
+							</li>
+				<li>
+				<div class="item-hd">
+											<span class="num-top">3</span>
+										
+																
+                                                                                                            					<a target="_blank" title="胡锡进:中印冲突有中国官兵牺牲" data="2|2" class="list-title" href="javascript:;" href_top="./detail?b=2&w=%BA%FA%CE%FD%BD%F8%3A%D6%D0%D3%A1%B3%E5%CD%BB%D3%D0%D6%D0%B9%FA%B9%D9%B1%F8%CE%FE%C9%FC">胡锡进:中印冲突有..</a>
+							
+					
+											<span class="icon-rise">352715</span>
+										<a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+				</div>
+									<div class="item-bd" style="display:none;"></div>
+							</li>
+				<li>
+				<div class="item-hd">
+											<span class="num-normal">4</span>
+										
+																
+                                                                                                            					<a target="_blank" title="河南出土青铜壶内不明液体被查明" data="2|2" class="list-title" href="javascript:;" href_top="./detail?b=2&w=%BA%D3%C4%CF%B3%F6%CD%C1%C7%E0%CD%AD%BA%F8%C4%DA%B2%BB%C3%F7%D2%BA%CC%E5%B1%BB%B2%E9%C3%F7">河南出土青铜壶内不..</a>
+							
+					
+											<span class="icon-rise">319280</span>
+										<a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+				</div>
+									<div class="item-bd" style="display:none;"></div>
+							</li>
+				<li>
+				<div class="item-hd">
+											<span class="num-normal">5</span>
+										
+																
+                                                                                                            					<a target="_blank" title="赞导师与师娘论文作者被处理" data="2|2" class="list-title" href="javascript:;" href_top="./detail?b=2&w=%D4%DE%B5%BC%CA%A6%D3%EB%CA%A6%C4%EF%C2%DB%CE%C4%D7%F7%D5%DF%B1%BB%B4%A6%C0%ED">赞导师与师娘论文作..</a>
+					<span class="icon icon-new"></span>		
+					
+											<span class="icon-rise">260379</span>
+										<a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+				</div>
+									<div class="item-bd" style="display:none;"></div>
+							</li>
+				<li>
+				<div class="item-hd">
+											<span class="num-normal">6</span>
+										
+																
+                                                                                                            					<a target="_blank" title="淘宝" data="2|2" class="list-title" href="javascript:;" href_top="./detail?b=2&w=%CC%D4%B1%A6">淘宝</a>
+							
+					
+											<span class="icon-fall">253174</span>
+										<a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+				</div>
+									<div class="item-bd" style="display:none;"></div>
+							</li>
+				<li>
+				<div class="item-hd">
+											<span class="num-normal">7</span>
+										
+																
+                                                                                                            					<a target="_blank" title="翻译" data="2|2" class="list-title" href="javascript:;" href_top="./detail?b=2&w=%B7%AD%D2%EB">翻译</a>
+							
+					
+											<span class="icon-fall">230403</span>
+										<a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+				</div>
+									<div class="item-bd" style="display:none;"></div>
+							</li>
+				<li>
+				<div class="item-hd">
+											<span class="num-normal">8</span>
+										
+																
+                                                                                                            					<a target="_blank" title="中国军队维和牺牲官兵名单" data="2|2" class="list-title" href="javascript:;" href_top="./detail?b=2&w=%D6%D0%B9%FA%BE%FC%B6%D3%CE%AC%BA%CD%CE%FE%C9%FC%B9%D9%B1%F8%C3%FB%B5%A5">中国军队维和牺牲官..</a>
+					<span class="icon icon-new"></span>		
+					
+											<span class="icon-rise">225021</span>
+										<a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+				</div>
+									<div class="item-bd" style="display:none;"></div>
+							</li>
+				<li>
+				<div class="item-hd">
+											<span class="num-normal">9</span>
+										
+																
+                                                                                                            					<a target="_blank" title="知乎" data="2|2" class="list-title" href="javascript:;" href_top="./detail?b=2&w=%D6%AA%BA%F5">知乎</a>
+							
+					
+											<span class="icon-fall">222353</span>
+										<a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+				</div>
+									<div class="item-bd" style="display:none;"></div>
+							</li>
+				<li>
+				<div class="item-hd">
+											<span class="num-normal">10</span>
+										
+																
+                                                                                                            					<a target="_blank" title="中国已成立国家新冠病毒中心" data="2|2" class="list-title" href="javascript:;" href_top="./detail?b=2&w=%D6%D0%B9%FA%D2%D1%B3%C9%C1%A2%B9%FA%BC%D2%D0%C2%B9%DA%B2%A1%B6%BE%D6%D0%D0%C4">中国已成立国家新冠..</a>
+					<span class="icon icon-new"></span>		
+					
+											<span class="icon-rise">208199</span>
+										<a href="javascript:;" class="icon-search icon-xiang-imp" target="_blank">search</a>
+				</div>
+									<div class="item-bd" style="display:none;"></div>
+							</li>
+			</ul>
+<a class="whole" href="javascript:;">完整榜单</a>
+								                            </div>
+                                                                                                                        <div class="tab-box" style="display:none"></div>
+                                                                        </div>
+        </div>
+    </div>
+</div>
+									                </div>
+    </div>
+
+                    </div>
+                <style>
+    .new-footer {
+        background: #F5F6F5;
+        border-top: 1px solid #ebebeb;
+        width: 100%;
+        height: 40px;
+        margin-top: 36px;
+        color: #666;
+        font-size: 12px;
+        line-height: 12px;
+        padding-top: 2px;
+    }
+    .new-footer a {
+        color: #666;
+        margin-left: 20px;
+        line-height: 12px;
+    }
+    .new-footer .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 961px;
+        height: 100%;
+        margin: 0 auto;
+        overflow: hidden;
+        position: relative;
+    }
+    .new-footer .index {
+        display: flex;
+        align-items: center;
+    }
+    .new-footer .index-logo {
+        height: 21px;
+        padding-bottom: 10px;
+    }
+</style>
+<div class="new-footer">
+    <div class="container">
+        <div class="copyright">
+            <span style="font-family:arial;">&copy;</span>2020 Baidu
+            <a target="_blank" href="duty/index.html">使用百度前必读</a>
+            <a href="javascript:;">关于百度风云榜</a>
+        </div>
+        <div class="index">
+            <span>搜索指数数据来源：</span>
+            <a target="_blank" href="javascript:;" style="margin: 0;">
+                <img class="index-logo" src="v2/static/img/index-logo.png">
+            </a>
+        </div>
+    </div>
+</div>
+
+        
+		<script>var toptrackserver="https://top.bdimg.com/frontend/static";var href = location.href, domains = ["top.baidu.com.cn","top.baidu.com"];for(var i = 0, len = domains.length; i < len; i++){if(href.indexOf(domains[i])!==-1){BASE_URL = "http://"+domains[i]+"/";BASEURL = BASE_URL+"frontend";break;}}var BASE_DATE = "2020年09月19日", online = true, curpage = "index";</script>
+        		
+    <script type="text/javascript">var bds_config = {"bdText":"盘点中国最新最热人、事、物信息，梳理5亿网民搜索欲望。在这里，你看到的，全中国都在搜！搜索风云，一榜看天下！我正在使用@百度搜索风云榜 ，[围观]快来看看吧！", "searchPic":1}</script>
+    <script type="text/javascript" id="bdshare_js" data="type=slide&amp;img=2&amp;pos=left&amp;uid=655757"></script>
+
+		<div id="bdshare" data="" style="display:none;position:absolute;top:0;left:0;" class="bdshareBox bdshare_t bds_tools get-codes-bdshare"><a class="bds_qzone"></a><a class="bds_tsina"></a><a class="bds_tqq"></a><a class="bds_renren"></a><a class="bds_baidu"></a><a class="bds_tieba"></a></div>
+        <script type="text/javascript" id="bdshell_js"></script>
+                                    <script type="text/javascript" src="frontend/build/common/common.min-150709.js"></script>
+            
+		
+		
+        <script type="text/javascript" src="frontend/build/index/index-150709.js"></script>
+    			<script type="text/javascript" src="frontend/build/buzz/yeyouzxlinks-150709.js"></script>
+	
+		<script src="frontend/static/embed/nsclick-150709.js" type="text/javascript"></script>
+		<!--
+<div style="display:none">--><script type="text/javascript">var clickmonkey ={log: function(){}};if(typeof ClickMonkey != "undefined"){clickmonkey = ClickMonkey(false);}var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F79a0e9c520104773e13ccd072bc956aa' type='text/javascript'%3E%3C/script%3E"));</script><!--</div>-->    </body>
+</html>

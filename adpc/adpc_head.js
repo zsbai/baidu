@@ -1,0 +1,1 @@
+-1<location.pathname.search(/^\/(tv|dianshi)$/)&&document.querySelector("#newTrailer h2 a")&&document.addEventListener("DOMContentLoaded",function(){document.querySelector("#newTrailer h2 a").innerText="娱圈故事汇"});
